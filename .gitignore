@@ -1,0 +1,7 @@
+.env
+*.api.key
+tmp/
+__pycache__/
+*.log
+checkpoints/
+model_weights/
