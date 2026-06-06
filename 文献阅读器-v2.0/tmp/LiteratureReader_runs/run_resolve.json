@@ -1,0 +1,13 @@
+{
+  "status": "ok",
+  "source_type": "local_pdf",
+  "source_url": "C:\\Users\\man_fulong\\Desktop\\可编程体内生产生物活性细胞外囊泡以治疗心肌梗死.pdf",
+  "local_pdf_path": "C:\\Users\\man_fulong\\Desktop\\可编程体内生产生物活性细胞外囊泡以治疗心肌梗死.pdf",
+  "title": "Programmable production of bioactive extracellular vesicles in vivo to treat myocardial infarction",
+  "metadata_sources": [
+    "local_pdf"
+  ],
+  "doi": "10.1038/s41467-025-58260-0",
+  "paper_id": "doi:10.1038/s41467-025-58260-0",
+  "script": "resolve_paper.py"
+}

@@ -1,0 +1,2448 @@
+=== Page 1 ===
+Resource
+Electromagnetic field-inducible in vivo gene switch
+for remote spatiotemporal control of gene
+expression
+Graphical abstract
+Highlights
+• EMF-inducible gene switch (Ei) for precise spatiotemporal
+gene expression control
+• Cyb5b mediates EMF-specific calcium oscillations for gene
+switch activation
+• Ei gene switch enables in vivo rejuvenation by reversing
+aging phenotypes
+• Ei system models Alzheimer’s disease and restores
+serotonergic function in vivo
+Authors
+Junyeop Kim, Yerim Hwang,
+Sumin Kim, ..., Youngeun Kwon,
+Jung-Suk Sung, Jongpil Kim
+Correspondence
+jpkim153@dongguk.edu
+In brief
+The EMF-inducible gene switch (Ei)
+platform provides precise spatiotemporal
+control of gene expression through
+Cyb5b-mediated calcium oscillations.
+This system enables Ei-OSK-driven
+in vivo rejuvenation reprogramming, Ei-
+mutant APP expression in the context of
+Alzheimer’s disease, and behavioral
+rescue in depression through Ei-Tph2-
+mediated neuromodulation.
+Kim et al., 2026, Cell 189, 1–16
+May 28, 2026 © 2026 Elsevier Inc. All rights are reserved, including those for
+text and data mining, AI training, and similar technologies.
+https://doi.org/10.1016/j.cell.2026.03.029
+ll
+
+
+=== Page 2 ===
+Resource
+Electromagnetic field-inducible in vivo 
+gene switch for remote spatiotemporal 
+control of gene expression
+Junyeop Kim,1,6 Yerim Hwang,1,6 Sumin Kim,1 Daeyeol Kwon,1 Jeonghyun Park,1 Byounggook Cho,1 Saemin An,1
+Soi Kang,1 Yunkyung Kim,1 Seonghun Kim,1 Christopher J. Lengner,2 Soochan Kim,3 Youngeun Kwon,4 Jung-Suk Sung,5
+and Jongpil Kim1,7,*
+1Institute for Stem Cells and Regenerative Medicine (ISR), Department of Chemistry, Dongguk University, Seoul 04620, Republic of Korea
+2Department of Biomedical Sciences, School of Veterinary Medicine and Institute for Regenerative Medicine, University of Pennsylvania, 
+Philadelphia, PA 19104, USA
+3School of Electronic and Electrical Engineering, Institute of IT Convergence, Hankyong National University, Anseong, Republic of Korea
+4Department of Biomedical Engineering, Dongguk University, Ilsan 10326, Republic of Korea
+5Department of Life Science, Dongguk University, Seoul 10326, Gyeonggi-do, Republic of Korea
+6These authors contributed equally 
+7Lead contact 
+*Correspondence: jpkim153@dongguk.edu
+https://doi.org/10.1016/j.cell.2026.03.029
+SUMMARY
+Gaining precise control of gene expression is crucial in biomedical applications. However, spatiotemporal 
+precision remains challenging. Here, we present a remotely controlled in vivo gene switch responsive to elec­
+tromagnetic fields (EMFs) that enables precise spatiotemporal activation of target genes. We uncovered the 
+EMF-inducible gene switch activation mechanism via a CRISPR-Cas9 screen, identifying cytochrome b5 type 
+B (Cyb5b) as an essential mediator likely acting as an EMF sensor. The EMF-inducible gene switch was acti­
+vated by rhythmic oscillatory calcium dynamics rather than generic calcium influx, defining a precisely tuned 
+and bio-orthogonal induction mechanism. Functionally, EMF activation of the Oct4-Sox2-Klf4 (OSK) cassette 
+induced in vivo partial reprogramming in aged mice, conditional expression of human mutant amyloid precur­
+sor protein (APP) for Alzheimer’s disease (AD) modeling recapitulated pathological features, and EMF- 
+mediated Tph2 expression restored serotonergic activity and ameliorated depressive-like behaviors in 
+Tph2-mutant depression mice. Overall, a remotely controlled EMF-inducible gene switch represents a versa­
+tile and effective biomedical platform.
+INTRODUCTION
+Regulatory elements in DNA that control the expression of genes 
+can be co-opted to generate ‘‘gene switches’’ that hold immense 
+potential for both research and therapeutic applications. One 
+such type of gene switch, the ‘‘inducible promoter,’’ can be acti­
+vated or deactivated by the presence or absence of specific mol­
+ecules or environmental cues.1–3 The potential applications of 
+gene switches in vivo are vast, particularly in cell and gene ther­
+apy, as well as other transgenesis applications. Recently, several 
+types of inducible gene switches have been developed to enable 
+remote control of in vivo gene expression using various stimuli 
+such as drugs, light, heat, ultrasound, and electrical signals. 
+For instance, tetracycline-responsive systems enable dose- 
+dependent gene regulation and have been extensively utilized 
+across diverse biological research.4 Moreover, optogenetic plat­
+forms use light-responsive proteins to precisely control cellular 
+processes, such as channelrhodopsin-mediated regulation of 
+neuronal activity.5,6 Similarly, gene switches are responsive to 
+heat, ultrasound, or electricity, leveraging transducers like heat 
+shock protein 70B (HSP70B), Piezo1, or nuclear factor of acti­
+vated T cells (NFAT) promoters to enable precise in vivo regula­
+tion for both targeted therapeutics and spatiotemporal studies of 
+gene function.7–11 However, current approaches often do not 
+provide precise control over the timing and duration of transgene 
+expression, as they often rely on constitutive promoters or induc­
+ible systems that require external stimuli, such as pharmacolog­
+ical agents or light. Moreover, pharmacological agents have 
+off-target effects (or undesirable effects on their endogenous tar­
+gets), and stimuli such as light are limited in their ability to pene­
+trate target tissues.
+Electromagnetic fields (EMFs) are a form of physical energy 
+that describe the interactions between electrically charged par­
+ticles.12 Previously, we and others have shown that exposure to 
+precisely defined extremely low-frequency EMFs (EL-EMF) 
+modulates the expression of specific genes involved in 
+ll
+Cell 189, 1–16, May 28, 2026 © 2026 Elsevier Inc. 
+1 
+All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+
+
+=== Page 3 ===
+stress response, epigenetic remodeling, and cellular signaling 
+pathways in certain cell types with functional outputs ranging 
+from enhanced proliferation, differentiation, cell migration, and 
+epigenetic reprogramming.12–15 Particularly, EL-EMF with direct 
+current (DC) pulsed sine square waveform can effectively pene­
+trate target tissues or areas of the body.16 Thus, EMF has several 
+advantages as a control for gene switches, including non- 
+invasiveness, precise targeting, and reversibility for in vivo 
+application.
+In this study, we developed a robust, EMF-responsive gene 
+switch utilizing the leucine-rich repeat-containing G protein- 
+coupled receptor 4 (Lgr4) promoter, which exhibits rapid and 
+reversible activation. Particularly, through a genome-wide 
+CRISPR-Cas9 screen, we identified cytochrome b5 type B 
+(Cyb5b) as a likely EMF sensor, defining the molecular link be­
+tween electromagnetic inputs and gene regulation. Notably, 
+EMF stimulation triggers distinct, rhythmic Ca2+ oscillations, 
+enabling a highly selective and bio-orthogonal mode of gene 
+regulation that provides a non-invasive framework for genetic 
+activation. Next, we explored its application in promoting in vivo 
+partial reprogramming. While current approaches utilizing short- 
+term Oct4, Sox2, Klf4, and c-Myc (OSKM) expression show 
+promise in reversing aging, they often risk teratogenesis and hy­
+perplasia due to imprecise regulation.17–19 Our EMF-inducible 
+system overcomes these limitations by enabling precise spatio­
+temporal control of cyclic Oct4-Sox2-Klf4 (OSK) expression. 
+Second, we established a distinct Alzheimer’s disease (AD) 
+model that decouples the effects of brain aging from pathogenic 
+Aβ deposition—a long-standing challenge in traditional models. 
+By accurately recapitulating human-like Aβ accumulation during 
+aging, our model provides a superior framework for studying AD 
+pathogenesis. Finally, we utilized the system to restore Tph2 
+expression in serotonin (5-HT)-deficient R439H Tph2 knockin 
+(KI) depression mice. By aligning 5-HT synthesis with circadian 
+cycles through rhythmic activation, our platform achieved 
+behavioral recovery, demonstrating its potential for finely tuned, 
+bio-orthogonal neuromodulation. Collectively, these applica­
+tions highlight the transformative potential of the EMF-inducible 
+gene switch for precise and non-invasive therapeutic interven­
+tions across diverse biomedical contexts.
+RESULTS
+Development of an EMF-inducible gene switch
+To develop an EMF-responsive gene switch, we initially sought to 
+find out genes that could be efficiently stimulated by EMF in the 
+brain. We established an EMF system using a pair of Helmholtz 
+coils (Data S1.1), capable of delivering a magnetic flux density 
+of 0.0–10.0 mT over a 0–200 Hz frequency range. We designed 
+the EMF system to generate unipolar pulsed fields where each 
+16.67 ms cycle (e.g., 60 Hz) consists of a 5 ms active burst of 
+20 consecutive single pulses, followed by a 11.67 ms resting inter­
+val (Figure S1A). Characterized by a pulsed sine square wave, the 
+EMF uniformity was determined to be approximately 99% within 
+the central region between the coils, ensuring consistent expo­
+sure (Data S1.1). We performed single-cell RNA sequencing 
+(scRNA-seq) to analyze transcriptional changes in the mouse 
+brain after exposure to EMF (2.0 mT and 60 Hz) for 48 h. We iden­
+tified a diverse range of cell types, including astrocytes, oligoden­
+drocytes, microglia, and neuroblasts (Figures S1B and S1C). We 
+found 15 upregulated genes that were classified as being posi­
+tively responsive to external stimuli related to signaling following 
+EMF exposure (Figure S1D). We found that the proportion of 
+Lgr4+ cells significantly increased across all identified cell types, 
+as well as relative to the total cell population, in the EMF-exposed 
+brain (Figures S1E and S1F).
+Furthermore, we found that Lgr4 expression was exclusively 
+upregulated following exposure in the 2.0 mT and 60 Hz of 
+EMF (Figure 1A). However, we observed only minor changes in 
+the other gene expression in these cells as a function of EMF 
+exposure (Data S1.2). Importantly, we observed robust temporal 
+control of Lgr4 expression in response to EMF exposure and 
+withdrawal, with the return of transcript levels to baseline within 
+24 h after the cessation of 48-h EMF stimulation (Figures 1B–1D). 
+To complement these findings, we performed bulk transcrip­
+tomic analysis on liver and kidney tissues (Data S1.3). Although 
+several genes associated with stimulus response were identi­
+fied, none exhibited consistent temporal response upon EMF 
+exposure (Data S1.4). While Lgr4 induction was likely masked 
+in bulk RNA sequencing (RNA-seq) by cellular heterogeneity in 
+this analysis, we further confirmed its EMF-dependent expres­
+sion across diverse tissues and cell types, including the brain, 
+heart, liver, spleen, kidney, and skin (Figures 1E and 1F). Given 
+the rapid and reversible induction of Lgr4 by EMF, we screened 
+various Lgr4 promoter regions using luciferase reporter assays 
+(Figures 1G and S1G). We identified a 450-bp upstream 
+sequence—designated the EMF-inducible DNA element (Ei)— 
+which exhibited maximal induction under optimized EMF condi­
+tions (2.0 mT, 60 Hz) with negligible background activity 
+(Figures 1H, 1I, S1H, and S1I). This robust temporal response 
+was further validated across various cell types, including fibro­
+blasts, NIH/3T3 cells, neurons, astrocytes, and cardiomyocytes 
+(Figure S1J). To assess the specificity and efficiency of the Ei 
+gene switch, we employed an Ei-Cre system in mouse fibro­
+blasts carrying a Cre-dependent luciferase reporter at the 
+Rosa26 locus (Figure S1K). EMF exposure triggered luciferase 
+induction within 12 h, peaking at 48 h and remaining robust 
+through 72 h (Figures S1L and S1M). Luminescence remained 
+negligible in the absence of EMF, indicating minimal basal 
+leakage of the Ei gene switch (Figure S1N). Moreover, to achieve 
+faster and more temporally precise EMF-inducible gene activa­
+tion, we engineered a second-generation Ei (sEi) by fusing a 
+cytomegalovirus (CMV) enhancer upstream of the Ei element 
+on the luciferase construct (Figure 1J). In transfected fibroblasts, 
+the sEi construct exhibited robust luciferase activation within 
+only 2 h of EMF exposure, with progressive increases through 
+10 h, while controls remained unresponsive (Figure 1K). This 
+enhanced temporal resolution enables rapid, sensitive, and pro­
+grammable gene control, significantly advancing the utility of Ei 
+gene switch systems.
+Next, we examined whether EMF-induced Lgr4 expression 
+activates its canonical downstream effectors, such as Wnt/ 
+β-catenin or Notch-Hes1. Western blot analysis showed no sig­
+nificant changes in these pathways across the brain, liver, and 
+kidney (Figures S2A and S2B). Furthermore, the expression of 
+oncogenic markers remained unaltered in the liver and kidney 
+ll
+2 
+Cell 189, 1–16, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 4 ===
+(Figure S2C), demonstrating that Lgr4 induction alone is insuffi­
+cient to initiate tumorigenic transcriptional programs under these 
+conditions. Since Lgr4 signaling is strictly dependent on 
+R-spondin (RSPO) ligands—which potentiate Wnt/β-catenin 
+signaling but are typically scarce in adult tissues20–22—we sup­
+plemented the cultures with exogenous RSPO1 or RSPO3 to 
+evaluate downstream signaling responses following EMF- 
+induced Lgr4 expression. Notably, the expression of Lgr4 target 
+Figure 1. Establishment of an EMF-responsive gene switch 
+(A) Quantitative real-time PCR (real-time qPCR) screening of candidate genes in fibroblasts (n = 3). 
+(B) Real-time qPCR of candidate genes in fibroblasts under EMF ON (0–48 h) and OFF (48–72 h) conditions (n = 3). 
+(C) Immunofluorescence (IF) of Lgr4 (green) in fibroblasts under EMF-ON (48 h) and OFF (72 h) conditions. 
+(D) Quantification of Lgr4 IF intensity (EMF ON/OFF) (n = 3). 
+(E) Real-time qPCR of candidate genes across multiple mouse tissues after 3 days of EMF exposure (n = 3). 
+(F) Lgr4 expression in mouse tissues across EMF ranges (0–10 mT; 0–200 Hz) (n = 3). 
+(G) Schematic of the Lgr4 promoter element. 
+(H) Luciferase activity of various Lgr4 promoter constructs in fibroblasts (n = 3). 
+(I) Luciferase activity of the Ei construct under varying EMF intensities and frequencies (n = 3). 
+(J) Schematic of the sEi construct. 
+(K) Luciferase activity of the sEi constructs compared with the Ei element in fibroblasts under EMF (n = 10). All quantified data represent mean ± SEM. Statistical 
+significance was determined by one-way (D) or two-way (A, B, E, F, H, I, and K) ANOVA. 
+See also Figures S1 and S2 and Data S1.
+ll
+Cell 189, 1–16, May 28, 2026 
+3 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 5 ===
+genes, such as Wnt3, Axin2, and glycogen synthase kinase-3β 
+(GSK-3β), was significantly elevated only under EMF conditions 
+with RSPO supplementations (Figures S2D–S2G). Furthermore, 
+Wnt/β-catenin signaling was activated only when RSPO1 or 
+RSPO3 was added exogenously at high concentrations (50 ng/ 
+mL), while physiological levels (0.05 ng/mL) failed to induce 
+Wnt/β-catenin activation, even in EMF-exposed cells with robust 
+Lgr4 expression (Figures S2H and S2I). Consistently, we also 
+found no changes in stress-related signaling pathways, including 
+extracellular signal-regulated kinase (ERK), p38, and JUN N-ter­
+minal kinase (JNK), following EMF exposure (Figure S2J). Collec­
+tively, these data demonstrate that EMF-induced Lgr4 activation 
+is self-limiting and strictly RSPO-dependent, thereby preventing 
+aberrant signaling under physiological conditions. In addition, to 
+assess long-term safety, wild-type mice were exposed to our 
+EMF condition continuously for 6 months. Systematic phenotyp­
+ing revealed no adverse effects on neurological, renal, or hepatic 
+functions, with hematological and metabolic profiles remaining 
+indistinguishable from controls (Data S1.5). Multi-organ tran­
+scriptomic profiling via bulk RNA-seq further confirmed this sta­
+bility, and hierarchical clustering and principal-component anal­
+ysis (PCA) showed substantial overlap between groups, with 
+differentially expressed genes falling within baseline biological 
+variability (Data S1.6). Moreover, no induction of stress-respon­
+sive or electromagnetic hypersensitivity markers was observed, 
+establishing the robust in vivo biocompatibility of prolonged EMF 
+exposure (Data S1.6 and S1.7).
+In vivo evaluation of an EMF-inducible gene switch
+We next co-opted the Ei element from the Lgr4 promoter to 
+create an Ei gene switch for in vivo applications. We prepared 
+a green fluorescent protein (GFP) reporter under the control of 
+the Ei element (Figure 2A). Consistent with previous results, 
+EMF exposure significantly increased GFP expression in fibro­
+blasts, which rapidly returned to background levels upon EMF 
+withdrawal (Figures 2B–2F). To assess the in vivo potential of 
+EMF-inducible gene expression, we generated transgenic mice 
+with this construct (Ei-GFP mice) and exposed them to EMF. Af­
+ter 3 days of EMF exposure, these mice expressed GFP 
+throughout their bodies, which was fully abrogated upon cessa­
+tion of EMF exposure (Figures 2G and S3A). We further 
+confirmed GFP induction in the kidney, spleen, skin, and liver 
+of Ei-GFP mice, along with a strong reduction 3 days after 
+EMF cessation (Figures 2H, S3B, and S3C). Notably, we 
+observed highly synchronous and uniform GFP induction across 
+cell populations in multiple deep tissues upon EMF exposure 
+(Figures 2I and S3D).
+To improve spatial accuracy, we localized EMF exposure to 
+the cranial, thoracic, abdominal, and pelvic regions using a mini­
+aturized EMF generator (Figures 2J and S3E). We observed 
+robust GFP expression predominantly within targeted organs— 
+including the brain, heart, kidney, and muscle—while surround­
+ing tissues (e.g., ear skin, aorta, and small/large intestine) 
+exhibited negligible induction (Figures 2K, S3F, and S3G). To 
+assess cell-type-specific control in vivo, we injected an Ei-driven 
+double-floxed inverse orientation (DIO)-GFP reporter (Ei-DIO- 
+GFP) into Dat-Cre and Gfap-Cre mice (Figure S3H). In these 
+mice, the reporter was expressed specifically in Th+ dopamine 
+neurons or Gfap+ astrocytes after 3 days of EMF exposure 
+(Figures 2L and 2M). Furthermore, we evaluated the Ei gene 
+switch system in human cells. Consistent with mouse data, 
+EMF induced robust, reversible GFP expression in Ei-GFP-trans­
+duced human fibroblasts, human neural stem cells (hNSCs), and 
+293T cells, returning to baseline after withdrawal (Figures S3I– 
+S3L). These results confirm that the Ei gene switch enables pre­
+cise temporal and spatial regulation of transgene expression in 
+both mouse and human cells.
+Mechanisms underlying EMF-induced gene switch 
+activation
+To elucidate the mechanism underlying Ei gene switch activa­
+tion, we performed a genome-wide CRISPR-Cas9 knockout 
+screen in Ei-GFP reporter fibroblasts. Briefly, we first isolated 
+the EMF-responsive (Ei-GFP⁺) cell population using fluores­
+cence-activated cell sorting (FACS) following EMF exposure. 
+This enriched population was subsequently transduced with a 
+genome-scale lentiviral pooled single guide RNA (sgRNA) library 
+(targeting 20,611 genes with 6 guides per gene23,24) and sub­
+jected to EMF exposure, followed by segregation into responsive 
+(GFP⁺) and non-responsive (GFP⁻) fractions (Figure 3A). Genomic 
+DNA was extracted from each fraction, and sgRNA abundance 
+was quantified by targeted deep sequencing to reveal genomic 
+targets whose disruption affects EMF responsiveness.
+Comparative analysis of sgRNA abundance revealed specific 
+guides enriched in the GFP⁻ compared with the GFP+ fraction 
+(Figures 3B and S4A), indicating that their disruption leads to 
+loss of EMF responsiveness. Notably, several genes were 
+consistently targeted by multiple independent sgRNAs within 
+the GFP⁻ population (Figures 3C and S4B). Among these, 
+Cyb5b, a membrane-bound electron carrier, emerged as the pri­
+mary hit with the most significant association with reduced re­
+porter activity under EMF exposure. To rigorously evaluate 
+gene-level significance, we employed the robust rank aggrega­
+tion (RRA) algorithm, which identifies significant genes by de­
+tecting non-random enrichment of independent sgRNAs at 
+the top of the ranked list.25 This analysis identified 20 genes 
+with statistically significant enrichment in the GFP⁻ population 
+(Table S1). Consistently, Cyb5b emerged as a top candidate, 
+confirming that the collective enrichment of its sgRNAs is statis­
+tically robust despite individual variations. To validate these find­
+ings, we individually generated sgRNAs targeting the top 20 can­
+didates from the CRISPR-Cas9 screen, along with selected 
+stimuli-responsive genes, and characterized their respective im­
+pacts on EMF-dependent GFP induction. Strikingly, among all 
+candidates tested, only the knockout of Cyb5b robustly sup­
+pressed EMF-driven GFP expression (Figure 3D; Data S1.8). 
+We further confirmed that Cyb5b deficiency completely 
+abolished both Ei-GFP and Ei-luciferase reporter activation, 
+whereas reintroduction of Cyb5b fully restored EMF sensitivity 
+(Figures 3E, S4C, and S4D). Taken together, these findings indi­
+cate that Cyb5b is required for activation of the Ei gene switch, 
+potentially acting as an EMF sensor.
+Given that EMF exposure is known to induce Ca2+ influx,26–28
+we addressed bio-orthogonality concerns by comparing the 
+Ca2+ influx dynamics elicited by EMF with those triggered by es­
+tablished activators, such as calcium ionophores and other 
+ll
+4 
+Cell 189, 1–16, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 6 ===
+Figure 2. Validation of EMF-inducible gene switch in vivo 
+(A) Ei gene switch system schematic. 
+(B–D) Western blot analysis and quantification of GFP in Ei-GFP-transduced fibroblasts after EMF ON and subsequent OFF conditions (n = 3). 
+(E and F) FACS analysis of Ei-GFP⁺ fibroblasts after 7 days of EMF-ON (E) and subsequent 5 days of EMF-OFF (F) (n = 6). 
+(G) Ei-GFP mice (UV vs. daylight). 
+(H) H&E and GFP IF of kidney, spleen, skin, and liver sections from Ei-GFP mice after EMF ON and subsequent OFF conditions. 
+(I) GFP western blot from Ei-GFP mice after EMF ON and subsequent OFF conditions. 
+(J) Miniaturized EMF exposure schematic. 
+(K) GFP western blot of tissues following site-specific EMF exposure. 
+(L) GFP and Th IF in the midbrain of Dat-Cre mice transduced with Ei-DIO (double-floxed inverted orientation)-GFP after EMF ON and subsequent OFF conditions 
+(n = 5). 
+(M) GFP and Gfap IF in the cortex of Gfap-Cre mice transduced with Ei-DIO-GFP after EMF ON and subsequent OFF conditions (n = 5). All quantified data 
+represent mean ± SEM. Statistical significance was determined by one-way (C–F, L, and M) or two-way (B) ANOVA. 
+See also Figure S3.
+ll
+Cell 189, 1–16, May 28, 2026 
+5 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 7 ===
+(legend on next page)
+ll
+6 
+Cell 189, 1–16, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 8 ===
+physical stimuli (Figures S4E and S4F). Time-lapse live-cell cal­
+cium imaging revealed that EMF exposure uniquely elicits rhyth­
+mic, sustained Ca2+ oscillations within the cytoplasm (Figures 
+3F, 3G, and S4G; Video S1). By contrast, all non-EMF stimuli we 
+tested—including pharmacological inducers of Ca2+ influx—eli­
+cited either transient or sustained, but non-oscillatory, increases 
+in intracellular Ca2+. Only the specific oscillatory Ca2+ signature 
+induced by EMF was able to trigger Lgr4 expression and Ei-lucif­
+erase activation (Figures S4H and S4I). These rhythmic Ca2+ oscil­
+lations were abolished in Cyb5b-deficient cells but restored upon 
+Cyb5b overexpression (Figure 3H). Together, these findings indi­
+cate that the Ei gene switch responds specifically to the oscillatory 
+Ca2+ dynamics characteristic of EMF, not to general Ca2+ influx, 
+underscoring its bio-orthogonal and precisely tuned activation 
+mechanism. Moreover, inhibition of L-type voltage-gated calcium 
+channels (VGCCs), specifically Cacna1f, significantly suppressed 
+EMF-induced Lgr4 expression (Figure 3I). Consistently, Cacna1f 
+knockdown disrupted rhythmic Ca2+ oscillations (Figure S4J), 
+indicating that VGCC-mediated Ca2⁺ influx is essential for Ei- 
+driven activation.
+To further delineate the downstream transcriptional effectors, 
+we performed an in silico analysis of the Ei element, revealing 
+multiple predicted transcription factor binding motifs, including 
+Sp7, Ctcf, and Tp53 (Tables S2 and S3). Gene Ontology analysis 
+further linked these factors predominantly to calcium signaling 
+and mechanical response pathways (Figures S4K and S4L). To 
+characterize these transcriptional regulations of the Ei element, 
+we performed DNA pulldown assays using the Ei element and 
+identified Sp7 as a major EMF-responsive binding protein 
+(Figure S4M). Sp7 inhibition reduced Lgr4 expression and 
+EMF-induced luciferase activity in fibroblasts (Figures 3J, S4N, 
+and S4O). Moreover, chromatin immunoprecipitation (ChIP)- 
+PCR assays revealed that the enrichment of Sp7 occupancy at 
+the Ei element was significantly increased upon EMF exposure, 
+indicating that Sp7 binds to the Ei element (Figures 3K and 3L). 
+Notably, this occupancy returned to baseline levels following 
+EMF withdrawal, demonstrating that this binding is reversible 
+(Figure 3M). Furthermore, Sp7 induction was exclusive to EMF- 
+responsive Ei-GFP⁺ cells across multiple tissues (Figure S4P). 
+We further demonstrated that Cyb5b knockout abolished EMF- 
+induced Lgr4 and Sp7 expression, which was fully restored by 
+Cyb5b reintroduction (Figures 3N and 3O). In addition, treatment 
+with RSPO1, a key ligand for Lgr4-mediated signaling,20 or bone 
+morphogenetic protein 2 (BMP2), a canonical inducer of Sp7,29
+failed to activate Ei-mediated GFP expression (Figures S4Q 
+and S4R), suggesting that Ei element activation is uniquely spe­
+cific to EMF exposure, independent of canonical RSPO1 or 
+BMP2 signaling. Moreover, the discrepancy between the initial 
+CRISPR-Cas9 screen and targeted Ei-binding protein assays 
+regarding Sp7 and Cacna1f suggests functional redundancy in 
+mediating Ei activation, where compensatory effectors likely 
+masked the individual contributions of these factors in the 
+pooled genomic context. Collectively, these findings demon­
+strate that EMF activates the Ei gene switch via Cyb5b-depen­
+dent Ca2+ influx, which promotes Sp7 binding to the Ei element 
+and enables bio-orthogonal, precise, and reversible Ei control.
+In vivo partial reprogramming by EMF-inducible gene 
+switch
+To evaluate the in vivo applicability of the Ei gene switch, we en­
+gineered an EMF-responsive system by placing the OSK factors 
+under the control of the Ei element, thereby leveraging the tempo­
+ral precision of EMF to achieve stringently regulated in vivo partial 
+reprogramming. First, GFP expression across multiple organs 
+following lentiviral transduction validated the widespread sys­
+temic delivery of the Ei-GFP system (Data S1.9). We also further 
+confirmed the temporal induction of OSK in multiple tissues in 
+response to EMF exposure (Figures 4A–4C, 4F, and S5A). In 
+particular, the relative increase in Klf4 showed variability depend­
+ing on the basal expression levels of each specific tissue 
+(Figure S5A). Next, to establish an optimized in vivo partial re­
+programming protocol, Ei-OSK-transduced mice were subjected 
+to various EMF exposure regimens, consisting of 1–6 consecu­
+tive days followed by corresponding withdrawal periods to 
+assess OSK expression (Figure S5B). Notably, we found that 
+EMF exposure for 4 or more consecutive days, even within a sin­
+gle cycle, markedly increased mortality and caused significant 
+weight loss. By contrast, regimens of 3 days or less, repeated 
+for up to two cycles, were well tolerated with no adverse effects 
+(Figures S5C and S5D). Based on these findings, we 
+Figure 3. Cyb5b-dependent mechanism of EMF-inducible gene switch activation 
+(A) Schematic of pooled CRISPR-Cas9 screening in Ei-GFP fibroblasts. 
+(B) Scatterplot of Ei-GFP⁺ vs. Ei-GFP⁻ sgRNA fractions (normalized log₂ read counts). 
+(C) Manhattan plot showing gene-level positive selection (MAGeCK p values) for targets enriched in GFP⁻ cells. The dashed line indicates p = 0.05. 
+(D) GFP western blot in Ei-GFP fibroblasts following candidate gene knockout (KO, top) and rescue (overexpression [OE], bottom) under EMF exposure. 
+(E) Representative GFP IF in WT, Cyb5b KO, and Cyb5b KO fibroblasts rescued with Cyb5b OE under EMF ON and subsequent OFF conditions. 
+(F) Representative images of intracellular Ca2+ dynamics in fibroblasts under control, EMF, and ionophore conditions over time. 
+(G) Real-time Ca2⁺ traces showing oscillatory influx under EMF. 
+(H) Ca2⁺ dynamics in WT, Cyb5b KO, and Cyb5b KO fibroblasts rescued with Cyb5b OE under EMF exposure conditions. 
+(I) Western blot and quantification of Lgr4 in fibroblasts following short hairpin RNA (shRNA)-mediated knockdown of various VGCC subtypes under EMF 
+exposure (n = 3). 
+(J) Ei-luciferase activity in fibroblasts treated with shControl or shSp7 under EMF ON and subsequent OFF conditions (n = 3). 
+(K) ChIP-PCR analysis of Sp7 and Lrrfip1 recruitment to the Ei element. 
+(L) ChIP-qPCR analysis of Sp7 binding across the Lgr4 promoter regions (regions 1–5) under control and EMF ON conditions (n = 3). 
+(M) ChIP-qPCR analysis of Sp7 binding at the Ei element (region 5) under EMF ON and subsequent OFF conditions (n = 3). 
+(N) Western blot of Cyb5b, Lgr4, and Sp7 in WT and Cyb5b KO fibroblasts. 
+(O) Western blot of Cyb5b, Lgr4, and Sp7 in Cyb5b KO fibroblasts and Cyb5b KO fibroblasts rescued with Cyb5b OE. All quantified data represent mean ± SEM. 
+Statistical significance was determined by one-way (I) or two-way (J, L, and M) ANOVA. 
+See also Figure S4, Data S1, Video S1, and Tables S1–S3.
+ll
+Cell 189, 1–16, May 28, 2026 
+7 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 9 ===
+Figure 4. In vivo partial reprogramming by EMF-inducible OSK gene switch 
+(A) Oct4 western blot in liver from mice transduced with lentiviral Ei-OSK during EMF exposure. 
+(B) Oct4 western blot in liver from Ei-OSK-transduced mice following EMF withdrawal. 
+(legend continued on next page) 
+ll
+8 
+Cell 189, 1–16, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 10 ===
+implemented a cyclic regimen consisting of 3 days of EMF expo­
+sure followed by a 4-day EMF withdrawal period (3 days ON/4 
+days OFF) to safely induce in vivo partial reprogramming 
+(Figures 4D and 4E). Under this condition, transient induction of 
+OSK, but not Nanog, was observed in Ei-OSK-transduced 
+mice, indicating that the cells underwent partial rather than full re­
+programming without activating endogenous pluripotency genes 
+(Figure 4F). Importantly, after 20 consecutive EMF cycles, mice 
+exhibited no significant alterations in metabolic rate, physical ac­
+tivity, circadian rhythms, or behavioral profiles, including locomo­
+tor and social performance (Data S1.10). Furthermore, renal and 
+hematological parameters remained within physiological ranges, 
+and histological assessments confirmed preserved tissue integ­
+rity without evidence of inflammation or dysplasia (Data S1.11). 
+Collectively, these results demonstrate that cyclic EMF-induced 
+OSK expression enables safe, reversible in vivo reprogramming, 
+thereby validating the long-term safety of the Ei gene switch.
+Subsequently, we investigated whether the Ei-OSK gene 
+switch 
+could 
+reverse 
+aging 
+phenotypes 
+in 
+progeroid 
+(LMNAG608G/G608G) and aged mice. After systemic Ei-OSK deliv­
+ery, 3-month-old progeria and 20-month-old mice were treated 
+with cyclic EMF (3 days ON/4 days OFF) for 90 and 120 days, 
+respectively (Figures 4G and S5E). Strikingly, Ei-OSK-mediated 
+in vivo partial reprogramming significantly improved external 
+appearance, including reduced spine curvature, in both proge­
+roid and aged mice (Figures 4H and S5F). Consistently, EMF- 
+exposed progeroid and aged mice showed attenuated body 
+weight loss and a dramatic increase in both median and maximal 
+lifespans (Figures 4I, 4J, S5G, and S5H). We further evaluated the 
+rejuvenating effects of EMF-induced OSK through histological 
+analysis. In progeroid and aged mice, Ei-OSK activation rescued 
+adventitial thickness in the aorta (Figures 4K and S5I). Addition­
+ally, smooth muscle actin (α-SMA)-positive cells and total cell 
+counts in the aortic endothelium increased (Figures S5J and 
+S5K), indicating vascular smooth muscle restoration. Beyond 
+the vasculature, cyclic EMF exposure ameliorated splenic 
+germinal center size, renal tube diameters, number of hepato­
+cytes, and epidermal thickness (Figures S5L and S5M). Consis­
+tently, senescence-associated genes and aging-related histone 
+modifications, including H3K9me3, H4K20me3, and H3K4me3, 
+were restored in the liver (Figures 4L, 4M, S5N, and S5O). 
+Notably, the age-related stress response gene p16INK4a signifi­
+cantly decreased (Figures 4N and S5P). Together, these findings 
+demonstrate that cyclic EMF-inducible OSK activation effectively 
+ameliorated multiple aging hallmarks across various tissues.
+To investigate whether the Ei gene switch system could be 
+used to spatially promote wound healing of local skin injuries, 
+we induced skin injuries using an excisional dorsal wound model 
+and injected Ei-OSK lentivirus directly into the wound area in 
+mice. In a skin injury mouse model, EMF-mediated OSK expres­
+sion was induced using two cycles of 3 days of EMF ON followed 
+by 4 days of EMF OFF (Figure 4O). 2 weeks of localized EMF 
+exposure significantly reduced fibrotic tissue accumulation, indi­
+cating improved tissue repair through in vivo partial reprogram­
+ming (Figure 4P). Notably, this cyclic regimen did not induce plu­
+ripotency markers—including endogenous Oct4, Nanog, and 
+Zfp42—compared with controls (Data S1.12). Building on these 
+findings and given the expression of Sox2 in NSCs, we tested 
+whether EMF-mediated OSK induction modulates NSC reprog­
+ramming in vivo (Figure S5Q). EMF-mediated OSK induction 
+significantly increased Gfap⁺/Sox2⁺ NSCs and Dcx⁺/Psa-ncam⁺ 
+neuroblasts (NBs) in the dentate gyrus (Figure S5R), demon­
+strating enhanced Sox2-dependent NSC reprogramming in vivo. 
+Collectively, these results demonstrate that EMF-induced OSK 
+activation promotes effective tissue rejuvenation and regenera­
+tion across diverse systems.
+Modeling AD by an EMF-inducible gene switch
+We next tested whether the Ei gene switch could enable modeling 
+of neurodegenerative disease. Aging is the primary risk factor for 
+neurodegenerative diseases, such as AD. Modeling AD involves 
+the overexpression of mutant genes, making it challenging to 
+distinguish between the effects of pathogenic Aβ deposition vs. 
+that which occurs during normal brain aging.30,31 We generated 
+mutant amyloid precursor protein (APP) transgenic mice harboring 
+human Swedish (KM670/671NL), Arctic (E693G), and Beyreuther/ 
+Iberian (I716F) mutations under the control of an Ei element 
+(Figure S6A) and subsequently exposed these mice to EMF. 
+Initially, to promote the overproduction of pathogenic Aβ, such 
+as Aβ42 in the brains of aged mice, EMF exposure was localized 
+using a miniature EMF generator in EMF-inducible mutant APP 
+(Ei-APPNL-G-F) transgenic mouse brains for 1 week. We observed 
+a significant increase in the β-cleavage products of APP (C99; C- 
+terminal fragment-β (CTFβ)) in EMF-exposed Ei-APPNL-G-F mice, 
+(C) Oct4 western blot in various tissues from Ei-OSK-transduced mice following a cycle of 3 days of EMF ON and 4 days of EMF OFF. 
+(D) Schematic representation of the cyclic EMF exposure protocol. 
+(E) Survival rates (control, n = 6; 3dON, n = 7; 14dON, n = 6; 3dON/4dOFF ×1, n = 8; 3dON/4dOFF ×2, n = 9). 
+(F) OSK and Nanog real-time qPCR at 3 days after EMF ON and 4 days after EMF OFF in liver (n = 6). 
+(G) In vivo partial reprogramming schematic (progeroid mice, cyclic EMF). 
+(H) Representative images of Ei-OSK-transduced progeroid mice after 3 months of cyclic EMF exposure. 
+(I and J) Survival rates (I) and body weight progression (J) of Ei-OSK-transduced progeroid mice (wild type [WT] + control, n = 12; WT + cyclic EMF, n = 10; 
+progeria + control, n = 11; progeria + cyclic EMF, n = 12). 
+(K) Aorta H&E and quantification of adventitial thickness and adventitia/media ratio (n = 3). 
+(L) Heatmap showing real-time qPCR of senescence-associated genes in liver and kidney (n = 3). 
+(M) Western blot of OSK, progerin, H3K9me3, and H4K20me3 in liver from Ei-OSK-transduced progeroid mice following cyclic EMF exposure. 
+(N) p16INK4a IF and quantification in liver (n = 5). 
+(O) Schematic of the wound healing model using the Ei-OSK system with a miniaturized EMF. 
+(P) Sirius red staining and collagen quantification in wound tissues from Ei-OSK-transduced mice after two cycles of EMF exposure (n = 3). All quantified data 
+represent mean ± SEM. Statistical significance was determined by a two-tailed Student’s t test (N), log-rank test (E and I), or two-way ANOVA (F, J, K, L, and P). 
+See also Figure S5 and Data S1.
+ll
+Cell 189, 1–16, May 28, 2026 
+9 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 11 ===
+Figure 5. In vivo modeling of AD by EMF-inducible mutant APP gene switch 
+(A) APP, C-terminal fragment-β (CTFβ), and C-terminal fragment-α (CTFα) western blot in the brain from WT and Ei-APPNL-G-F mice under EMF. 
+(B) Soluble/insoluble Aβ40 and Aβ42 ELISA (n = 3). 
+(C) Aβ42 IF (cortex/hippocampus [Hp]) and quantification (0–10 months) (n = 3). 
+(D) Schematic of the localized EMF exposure in young (3-month-old) and aged (20-month-old) Ei-APPNL-G-F mice. 
+(legend continued on next page) 
+ll
+10 
+Cell 189, 1–16, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 12 ===
+while wild-type mice and control Ei-APPNL-G-F mice did not exhibit 
+an increase in pathogenic Aβ (Figure 5A). We also confirmed 
+increased levels of soluble and insoluble Aβ fractions in 
+6-month-old EMF-exposed Ei-APPNL-G-F mice (Figure 5B). We 
+found that 6-month-old Ei-APPNL-G-F mice subjected to 3 months 
+of EMF exposure exhibited significantly higher cortical and hippo­
+campal Aβ plaque levels than age-matched APPNL-G-F KI mice 
+(Figure 5C), indicating that the EMF-inducible mutant APP system 
+robustly recapitulates amyloid pathology in vivo.
+Subsequently, to investigate age-dependent effects on Aβ 
+generation, young (3-month-old) and aged (20-month-old) Ei- 
+APPNL-G-F mice were exposed to EMF (Figure 5D). Remarkably, 
+we observed that aged Ei-APPNL-G-F mice exposed to EMF ex­
+hibited a significant increase in the Aβ42 to Aβ40 secretion ratio 
+compared with their young counterparts, indicating that Aβ gen­
+eration is accelerated with aging (Figure 5E). Next, to investigate 
+how brain aging affects the development of AD phenotypes, we 
+compared Aβ plaque deposition and associated neuroinflamma­
+tion between young and aged Ei-APPNL-G-F mice following EMF 
+exposure. Initially, we found that Aβ plaque deposition was de­
+tected 2–3 months following EMF exposure in 3-month-old Ei- 
+APPNL-G-F mice (Figure S6B). Consistently, aged Ei-APPNL-G-F 
+mice exhibited a significant increase in Aβ plaque count and 
+volume compared with young Ei-APPNL-G-F mice after 3 months 
+of EMF exposure (Figures 5F and 5G). Interestingly, aged Ei- 
+APPNL-G-F mice exhibited a higher basal level of neuroinflamma­
+tion, with a marked accumulation of microglia and astrocytes 
+around Aβ plaques following EMF exposure (Figures 5H, 5I, and 
+S6C). These observations suggest that the pre-existing inflam­
+matory environment in the aged brain plays a significant role in 
+the progression of AD. Moreover, in aged Ei-APPNL-G-F mice, 
+3 months of EMF exposure induced increased Aβ deposition 
+compared with in APP KI (APPNL-G-F/NL-G-F) mice (Figure S6D). 
+Ei-APPNL-G-F mice also exhibited pronounced spatial-learning 
+deficits compared with age-matched controls (Figure S6E). In 
+addition, we observed significant memory and cognition impair­
+ments in EMF-exposed aged Ei-APPNL-G-F mice compared with 
+young mice (Figures 5J–5L). These findings suggest that the Ei 
+gene switch effectively recapitulates AD phenotypes, particularly 
+in the context of aging, thus providing a platform for dissecting 
+the temporal and mechanistic basis of neurodegeneration.
+Restoration of serotonergic function by an EMF- 
+inducible gene switch
+To evaluate the precise regulation of the Ei gene switch, we em­
+ployed Tph2-R439H KI (Tph2-KI) mice, a model where precise 
+temporal control of Tph2 is essential to recapitulate physiolog­
+ical 5-HT dynamics and associated behavioral outputs.32–35
+First, we prepared the lentiviral construct, placing the wild-type 
+Tph2 gene under the control of sEi, facilitating rapid activation 
+only in response to EMF exposure (Figure 6A). Upon lentiviral de­
+livery to fibroblasts, robust induction of Tph2 was detected after 
+a 6-h EMF exposure, peaking at 12 h and rapidly returning to 
+baseline within 12 h after cessation of EMF, confirming the tight 
+temporal regulation of Tph2 (Figure 6B). To further validate sys­
+tem functionality in vivo, sEi-Tph2 lentivirus was stereotaxically 
+injected into the dorsal raphe nucleus (DRN) of the Tph2-KI 
+mice brain, a primary site of serotonergic neuron localization. 
+Following a cyclic 12-h EMF regimen, Tph2 mRNA levels and 
+Tph2-positive cells in the DRN displayed significant cyclic upre­
+gulation coinciding with EMF exposure intervals and subsided to 
+baseline within 12 h after EMF withdrawal, indicating robust and 
+transient reactivation of the serotonergic phenotype (Figures 6C 
+and 6D). Consistently, we confirmed that decreased whole-brain 
+5-HT levels in Tph2 KI mice were partially restored by 12 h of 
+EMF exposure (Figure 6E). Further regional quantification 
+confirmed significant restoration of 5-HT and its metabolite 
+5-hydroxyindoleacetic acid (5-HIAA) levels in the raphe nuclei, 
+hypothalamus, prefrontal cortex, and hippocampus of EMF- 
+exposed mice (Figure 6F). Furthermore, increased 5-HT- 
+positive cells in the DRN and substantia nigra (SN) reverted to 
+reduced levels upon EMF cessation (Figures 6G and 6H), 
+confirming that cyclic EMF-induced sEi-Tph2 activation enables 
+stimulus-dependent 5-HT regulation in Tph2-KI mice. To investi­
+gate how temporal EMF-driven Tph2 expression impacts 
+depressive and anxiety-like behaviors, sEi-Tph2-transduced 
+Tph2-KI mice were exposed to cyclic EMF (12 h/day) or contin­
+uous EMF (24 h/day) (Figure 6I). Cyclic EMF significantly 
+increased c-Fos in the DRN, with a further increase observed un­
+der continuous exposure (Figures 6J and 6K). These results sug­
+gest that neuronal activity is elevated in accordance with sus­
+tained Tph2 expression. Notably, 12-h interval EMF exposure 
+robustly restored behavioral phenotypes toward wild-type 
+levels, reducing immobility, aggression, and anxiety-related 
+measures (Figure 6L). Conversely, continuous EMF exposure 
+failed to induce behavioral improvement, remaining comparable 
+to untreated Tph2-KI controls with substantial variability 
+(Figure 6L). These results demonstrate that the temporally 
+controlled activation of Tph2 via the sEi system is essential for 
+rescuing depressive-like behaviors, highlighting the temporal 
+and spatial effectiveness of this EMF-mediated gene switch.
+DISCUSSION
+In this study, we developed an Ei gene switch that enables pre­
+cise spatiotemporal regulation of gene expression in vivo. 
+(E) Soluble/insoluble Aβ40 and Aβ42 ELISA (n = 3). 
+(F) ThT staining of Aβ plaques in the Hp of young and aged Ei-APPNL-G-F mice after 3 months of EMF exposure. 
+(G) Aβ plaque quantification (n = 8). 
+(H) Gfap (red), Aβ42 (green), and Iba1 (blue) IF in Hp. 
+(I) Gfap+, Iba1+, and Aβ plaque quantification (n = 6). 
+(J–L) Behavior assessments of Ei-APPNL-G-F mice after 3 months of EMF exposure were assessed by (J) a Y-maze test, (K) contextual fear conditioning, and (L) a 
+Morris water maze test (n = 6 per group). All quantified data represent mean ± SEM. Statistical significance was determined by one-way (J) or two-way (C, E, G, 
+and I–L) ANOVA. 
+See also Figure S6.
+ll
+Cell 189, 1–16, May 28, 2026 
+11 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 13 ===
+Figure 6. EMF-inducible Tph2 expression and regulation of 5-HT synthesis in a depression mouse model 
+(A) Schematic illustrating cyclic EMF exposure (12 h ON/12 h OFF; 2.0 mT, 60 Hz) applied to Tph2 KI mice transduced with sEi-Tph2. EMF exposure drives 
+temporal activation of Tph2, mimicking 5-HT circadian oscillations in the dorsal raphe nucleus (DRN). 
+(legend continued on next page) 
+ll
+12 
+Cell 189, 1–16, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 14 ===
+Precisely controlled transgene expression in vivo via gene 
+switches is becoming increasingly important for the translation 
+of safe and effective gene & cell therapy as well as transgenic 
+technology. Existing gene switches—whether stimulus-respon­
+sive (e.g., ultrasound and electrical signals) or drug-inducible— 
+face challenges in precise timing, tissue penetration, and poten­
+tial side effects from inducing agents.36 However, EMF induction 
+offers several distinct advantages such as gene switch. First, the 
+non-invasiveness of EMF allows for external application to cells 
+or organisms without invasive procedures. Second, EMF can be 
+precisely targeted to specific cells or tissues by combining tis­
+sue-specific promoters and/or focused EMF generators, 
+providing spatially and temporally precise control over gene 
+expression. Crucially, EMF offers rapidly reversible control over 
+gene expression, enabling the study of the temporal dynamics 
+of gene expression and allowing for rapid cessation of delete­
+rious overexpression, such as the teratogenic consequences 
+of excessive OSK expression. Furthermore, the response of 
+the Lgr4 Ei element shows negligible transcriptional activity 
+when not exposed to EMF stimulation. This makes Ei element- 
+based gene switches promising for a wide range of applications 
+in basic research, biotechnology, and medicine.
+Moreover, we identified Cyb5b, a membrane-bound electron 
+carrier, as an essential mediator that likely facilitates the trans­
+duction of EMF-induced physical stimuli into biochemical re­
+sponses. We propose that EMF-driven changes in the Cyb5b- 
+associated redox state modulate Cacna1f gating, subsequently 
+triggering targeted Ca2+ influx. Importantly, our data demon­
+strate that Cyb5b and Cacna1f are essential for generating the 
+distinctive, EMF-specific calcium oscillatory pattern observed 
+in our system. These oscillations function as a temporal code, 
+consistent with the principle of frequency encoding,37,38
+whereby cells translate specific Ca2⁺ dynamics into defined tran­
+scriptional outputs. In this context, EMF-induced calcium oscil­
+lations are selectively decoded to induce Sp7 activation, which 
+subsequently binds to the Ei element and activates the Ei gene 
+switch, thereby providing a molecular link between calcium dy­
+namics and Ei-dependent transcriptional activation. Together, 
+these findings bridge the gap between external physical stimuli 
+and intracellular signaling, establishing the Ei gene switch as a 
+highly tunable platform for the remote regulation of cellular func­
+tions through the biological decoding of EMF.
+The Ei gene switch offers a paradigm shift in in vivo partial re­
+programming by addressing the critical safety concerns of cur­
+rent approaches and enabling its application in human therapeu­
+tics. Its rapid reversibility and non-invasive nature allow for 
+precise control over OSKM expression, thereby preventing 
+OSKM-driven hyperplasia. Moreover, by overcoming the 
+inherent limitations of conventional transgenic systems in ac­
+cessing human organs, this platform establishes a feasible 
+framework for translating in vivo partial reprogramming into clin­
+ical applications for human age-reversal therapies. Furthermore, 
+we utilized the Ei gene switch to establish an AD model that de­
+couples intrinsic brain aging from pathogenic Aβ deposition. By 
+enabling conditional mutant APP induction in aged mice,39 our 
+platform successfully recapitulated the age-dependent Aβ 
+accumulation characteristic of human sporadic AD. This non- 
+invasive, remotely controlled system allows for the precise 
+distinction between aging-related factors and amyloid-driven 
+toxicity, providing a robust framework for evaluating AD patho­
+genesis and therapeutic interventions. We further demonstrated 
+the versatility of the Ei gene switch by restoring serotonergic ac­
+tivity in Tph2-deficient mice. Unlike static gene therapies, our 
+system enabled rhythmic Tph2 induction, mimicking natural 
+circadian oscillations. This biomimetic regulation successfully 
+reversed depressive-like behaviors, proving the system’s effi­
+cacy in governing temporally sensitive neurobiological pro­
+cesses. Collectively, these results highlight the distinct advan­
+tage of the Ei system in governing genes that are sensitive to 
+temporal dynamics, offering a more sophisticated tool for func­
+tional neurobiology and regenerative medicine.
+Limitations of the study
+Although we identified Cyb5b as an essential component of the 
+Ei gene switch that potentially functions as a key transducer link­
+ing EMF to intracellular signaling, future studies are warranted to 
+dissect the precise molecular mechanisms—specifically, how 
+EMF-induced conformational or redox changes in Cyb5b and 
+its associated redox states mechanistically modulate Cacna1f 
+gating. In addition, while we demonstrated the therapeutic 
+(B and C) Time course real-time qPCR analysis of Tph2 expression in fibroblasts (B) and in the Tph2-KI mouse brain (C) after transduction with sEi-Tph2 under 
+cyclic EMF exposure (n = 3). 
+(D) IF staining of Tph2 (red) and DAPI (blue) in the DRN from WT and Tph2-KI mice transduced with sEi-Tph2 (left). Quantification of Tph2-positive cells after cyclic 
+EMF exposure is shown (right). Scale bar, 100 μm (n = 3). 
+(E) Quantification of whole-brain 5-HT levels measured via ELISA in Tph2-KI mice transduced with sEi-GFP or sEi-Tph2 under control or cyclic EMF exposure (n = 3). 
+(F) Quantification of 5-HT and 5-HIAA in each brain region and across the raphe nuclei (RN), hypothalamus (HPA), prefrontal cortex (PFC), and Hp of Tph2-KI mice 
+transduced with sEi-Tph2 under control or EMF exposure (n = 3). 
+(G) Immunolabeling of 5-HT in the DRN and substantia nigra (SN) of WT and sEi-Tph2-transduced Tph2-KI mice under control, EMF ON, and subsequent EMF 
+OFF. 
+(H) Quantification of 5-HT⁺ cells in DRN and SN shown in (G) (n = 5). 
+(I) Schematic of Tph2 activation in cyclic EMF-exposed Tph2-KI mice transduced with sEi-Tph2. Cyclic EMF exposure (2.0 mT, 60 Hz; 12 h ON/12 h OFF) induces 
+rhythmic Tph2 expression and continuous EMF exposure (24 h/day) for sustained Tph2 activation. 
+(J) IF staining of c-Fos (red) in the DRN of WT and sEi-Tph2-transduced Tph2-KI mice under cyclic EMF (12 h ON) or continuous EMF (24 h ON) conditions. Scale 
+bar, 50 μm. 
+(K) Quantification of c-Fos-positive cells shown in (J) (n = 5). 
+(L) Behavioral assays in WT and sEi-Tph2-transduced Tph2-KI mice under control, cyclic EMF (12 h ON), or continuous EMF (24 h ON) conditions. Shown are the 
+tail suspension test (immobility time), resident-intruder test (percentage of attack duration), light/dark box test (latency to cross to light chamber), and marble 
+burying test (percentage of buried marbles) (n = 6 per group). All quantified data represent mean ± SEM. Statistical significance was determined by one-way (D, H, 
+K, and L) or two-way (B, C, E, and F) ANOVA.
+ll
+Cell 189, 1–16, May 28, 2026 
+13 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 15 ===
+potential of the Ei gene switch in murine models, further studies 
+in large animal models, such as non-human primates, or pilot hu­
+man clinical trials are warranted to validate the system’s efficacy 
+and safety at a larger anatomical scale and to ensure its transla­
+tional applicability.
+RESOURCE AVAILABILITY
+Lead contact
+Requests for further information and resources should be directed to the lead 
+contact, Jongpil Kim (jpkim153@dongguk.edu).
+Materials availability
+All materials/mouse lines generated in this study are available from the lead 
+contact with a completed materials transfer agreement.
+Data and code availability
+• Raw sequencing data generated in this study (scRNA-seq and bulk RNA- 
+seq) have been deposited in the NCBI Sequence Read Archive (SRA) un­
+der BioProject accessions PRJNA1331480 and PRJNA1402770 and are 
+publicly available as of the date of publication.
+• This paper does not report original code.
+• Any additional information required to reanalyze the data reported in this 
+paper is available from the lead contact upon request.
+ACKNOWLEDGMENTS
+This work was supported by the Basic Science Research Program through the 
+National Research Foundation of Korea (NRF) funded by the Ministry of Edu­
+cation (RS-2022-NR070871); the ABC-based Regenerative BioTherapeutics 
+(ABC Project) grant funded by the Ministry of Science and ICT and the Ministry 
+of Health and Welfare (RS-2024-00433755), Korea; a grant funded by the Min­
+istry of Science and ICT (RS-2026-25527018); and the Samsung Research 
+Funding and Incubation Center of Samsung Electronics (SRFC-TC2003-04). 
+We would also like to thank Takashi Saito and Takaomi C. Saido for providing 
+the APPNL-G-F knockin mouse strain. The graphical abstract was created in 
+BioRender by Y.H. (2026).
+AUTHOR CONTRIBUTIONS
+Junyeop Kim conceptualized the study, developed the methodology, wrote 
+the original draft, reviewed and edited the manuscript, and managed project 
+administration; Y.H. conceptualized the study, developed the methodology, 
+performed investigation and visualization, wrote the original draft, reviewed 
+and edited the manuscript, and managed project administration; S.K. contrib­
+uted to methodology, investigation, and visualization and performed valida­
+tion; D.K. developed the software and performed data curation; J.P. contrib­
+uted to methodology and performed investigation and validation; B.C. 
+developed the software; S.A. developed the software; S.I.K. performed formal 
+analysis and wrote the original draft; Y. Kim performed validation; Seonghun 
+Kim performed validation; C.J.L. contributed to methodology and wrote and 
+edited the manuscript; Soochan Kim provided resources; Y. Kwon contributed 
+to methodology and performed investigation and validation; J.-S.S. contrib­
+uted to methodology and performed validation; Jongpil Kim reviewed and edi­
+ted the manuscript, managed project administration, supervised the research, 
+and acquired funding.
+DECLARATION OF INTERESTS
+The authors declare no competing interests.
+STAR★METHODS
+Detailed methods are provided in the online version of this paper and include 
+the following:
+• KEY RESOURCES TABLE
+• EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+○Cell lines
+○Experimental animals
+• METHOD DETAILS
+○Electromagnetic field (EMF) exposure conditions
+○Single-cell RNA sequencing
+○Construction of the EMF inducible gene switch plasmid
+○Preparation of Ei-OSK, Ei-APPNL-G-F and Ei-Tph2 constructs
+○Lentiviral production and titration
+○Generation of transgenic mice
+○In vitro luciferase reporter assay
+○Chromatin immunoprecipitation (ChIP) analysis
+○DNA-Protein binding assay and proteomic identification
+○RNA preparation and real-time qPCR
+○Characterization and validation of spatiotemporal gene control us­
+ing the Ei-GFP system
+○In vivo partial reprogramming using the Ei-OSK system
+○In vivo modeling of Alzheimer’s disease using the Ei-APP system
+○Restoration of serotonergic function using the sEi-Tph2 system
+○CRISPR/Cas9 library specification
+○FACS cytometry and cell sorting
+○Western blotting analysis
+○Measurement of Aβ1-42 and Aβ1-40
+○Thioflavin T (ThT) staining
+○Immunohistochemistry
+○Isolation of ROSA26-LSL-Luc tail-tip fibroblasts
+○Fluo-8 calcium influx, calcium oscillation amplitude
+○Transcription factor binding site prediction
+○Behavior test
+• QUANTIFICATION AND STATISTICAL ANALYSIS
+SUPPLEMENTAL INFORMATION
+Supplemental information can be found online at https://doi.org/10.1016/j.cell. 
+2026.03.029.
+Received: July 25, 2023
+Revised: February 10, 2026
+Accepted: March 17, 2026
+REFERENCES
+1. Bojar, D., Scheller, L., Hamri, G.C.E., Xie, M., and Fussenegger, M. (2018). 
+Caffeine-inducible gene switches controlling experimental diabetes. Nat. 
+Commun. 9, 2318. https://doi.org/10.1038/s41467-018-04744-1.
+2. Bai, P., Liu, Y., Xue, S., Hamri, G.C.E., Saxena, P., Ye, H., Xie, M., and Fus­
+senegger, M. (2019). A fully human transgene switch to regulate therapeu­
+tic protein production by cooling sensation. Nat. Med. 25, 1266–1273. 
+https://doi.org/10.1038/s41591-019-0501-8.
+3. Wang, Y., Liao, S., Guan, N., Liu, Y., Dong, K., Weber, W., and Ye, H. 
+(2020). A versatile genetic control system in mammalian cells and mice 
+responsive to clinically licensed sodium ferulate. Sci. Adv. 6, eabb9484. 
+https://doi.org/10.1126/sciadv.abb9484.
+4. Zhou, X., Vink, M., Klaver, B., Berkhout, B., and Das, A.T. (2006). Opti­
+mization of the Tet-On system for regulated gene expression through 
+viral evolution. Gene Ther. 13, 1382–1390. https://doi.org/10.1038/sj. 
+gt.3302780.
+5. Boyden, E.S., Zhang, F., Bamberg, E., Nagel, G., and Deisseroth, K. 
+(2005). Millisecond-timescale, genetically targeted optical control of neu­
+ral activity. Nat. Neurosci. 8, 1263–1268. https://doi.org/10.1038/nn1525.
+6. Kennedy, M.J., Hughes, R.M., Peteya, L.A., Schwartz, J.W., Ehlers, M.D., 
+and Tucker, C.L. (2010). Rapid blue-light-mediated induction of protein in­
+teractions in living cells. Nat. Methods 7, 973–975. https://doi.org/10. 
+1038/nmeth.1524.
+ll
+14 
+Cell 189, 1–16, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 16 ===
+7. Miller, I.C., Gamboa Castro, M., Maenza, J., Weis, J.P., and Kwong, G.A. 
+(2018). Remote Control of Mammalian Cells with Heat-Triggered Gene 
+Switches and Photothermal Pulse Trains. ACS Synth. Biol. 7, 1167– 
+1173. https://doi.org/10.1021/acssynbio.7b00455.
+8. Pan, Y., Yoon, S., Sun, J., Huang, Z., Lee, C., Allen, M., Wu, Y., Chang, 
+Y.J., Sadelain, M., Shung, K.K., et al. (2018). Mechanogenetics for the 
+remote and noninvasive control of cancer immunotherapy. Proc. Natl. 
+Acad. Sci. USA 115, 992–997. https://doi.org/10.1073/pnas.1714900115.
+9. Krawczyk, K., Xue, S., Buchmann, P., Charpin-El-Hamri, G., Saxena, P., 
+Hussherr, M.D., Shao, J., Ye, H., Xie, M., and Fussenegger, M. (2020). 
+Electrogenetic cellular insulin release for real-time glycemic control in 
+type 1 diabetic mice. Science 368, 993–1001. https://doi.org/10.1126/sci­
+ence.aau7187.
+10. Deisseroth, K., Feng, G., Majewska, A.K., Miesenbo¨ ck, G., Ting, A., and 
+Schnitzer, M.J. (2006). Next-generation optical technologies for illumi­
+nating genetically targeted brain circuits. J. Neurosci. 26, 10380–10386. 
+https://doi.org/10.1523/JNEUROSCI.3863-06.2006.
+11. Stanley, S.A., Sauer, J., Kane, R.S., Dordick, J.S., and Friedman, J.M. 
+(2015). Remote regulation of glucose homeostasis in mice using geneti­
+cally encoded nanoparticles. Nat. Med. 21, 92–98. https://doi.org/10. 
+1038/nm.3730.
+12. Yoo, J., Lee, E., Kim, H.Y., Youn, D.H., Jung, J., Kim, H., Chang, Y.J., Lee, 
+W., Shin, J., Baek, S., et al. (2017). Electromagnetized gold nanoparticles 
+mediate direct lineage reprogramming into induced dopamine neurons 
+in vivo for Parkinson’s disease therapy. Nat. Nanotechnol. 12, 1006– 
+1014. https://doi.org/10.1038/Nnano.2017.133.
+13. Song, K., Im, S.H., Yoon, Y.J., Kim, H.M., Lee, H.J., and Park, G.S. (2018). 
+A 60 Hz uniform electromagnetic field promotes human cell proliferation 
+by decreasing intracellular reactive oxygen species levels. PLoS One 13, 
+e0199753. https://doi.org/10.1371/journal.pone.0199753.
+14. Chang, Y., Yoo, J., Kim, J., Hwang, Y., Shim, G., Oh, Y.K., and Kim, J. 
+(2021). Electromagnetized Graphene Facilitates Direct Lineage Reprog­
+ramming into Dopaminergic Neurons. Adv. Funct. Mater. 31, 2105346. 
+https://doi.org/10.1002/adfm.202105346.
+15. Kim, J., Kim, S., Hwang, Y., An, S., Park, J., Kwon, Y.B., Cho, B., Kwon, D., 
+Kim, Y., Kang, S., et al. (2025). Electromagnetized MXenes Enhance the 
+Efficient Direct Reprogramming of Dopamine Neurons for Parkinson’s Dis­
+ease Therapy. ACS Nano 19, 16744–16759. https://doi.org/10.1021/acs­
+nano.5c01457.
+16. Ganesan, K., Gengadharan, A.C., Balachandran, C., Manohar, B.M., and 
+Puvanakrishnan, R. (2009). Low frequency pulsed electromagnetic field– 
+a viable alternative therapy for arthritis. Indian J. Exp. Biol. 47, 939–948.
+17. Ocampo, A., Reddy, P., Martinez-Redondo, P., Platero-Luengo, A., Hata­
+naka, F., Hishida, T., Li, M., Lam, D., Kurita, M., Beyret, E., et al. (2016). 
+In vivo Amelioration of Age-Associated Hallmarks by Partial Reprogram­
+ming. Cell 167, 1719–1733.e12. https://doi.org/10.1016/j.cell.2016. 
+11.052.
+18. Kim, J., Hwang, Y., Kim, S., Chang, Y., Kim, Y., Kwon, Y., and Kim, J. 
+(2023). Transcriptional activation of endogenous Oct4 via the CRISPR/ 
+dCas9 activator ameliorates Hutchinson-Gilford progeria syndrome in 
+mice. Aging Cell 22, e13825. https://doi.org/10.1111/acel.13825.
+19. Kim, H., Kim, J., Lee, E., Conklin, B., Hou, Y., Kim, S., Hwang, Y., Lee, 
+K.B., and Kim, J. (2025). Alleviation of Aging-Related Hallmarks in a 
+Mouse Model of Progeria via a Nanoparticle-Based Artificial Transcrip­
+tion Factor. Adv. Funct. Mater. 35, 2425944. https://doi.org/10.1002/ 
+adfm.202425944.
+20. Carmon, K.S., Gong, X., Lin, Q.S., Thomas, A., and Liu, Q.Y. (2011). R- 
+spondins function as ligands of the orphan receptors LGR4 and LGR5 to 
+regulate Wnt/β-catenin signaling. Proc. Natl. Acad. Sci. USA 108, 
+11452–11457. https://doi.org/10.1073/pnas.1106083108.
+21. Ruffner, H., Sprunger, J., Charlat, O., Leighton-Davies, J., Grosshans, B., 
+Salathe, A., Zietzling, S., Beck, V., Therier, M., Isken, A., et al. (2012). R- 
+Spondin Potentiates Wnt/β-Catenin Signaling through Orphan Receptors 
+LGR4 and LGR5. PLoS One 7, e40976. https://doi.org/10.1371/journal. 
+pone.0040976.
+22. Kang, Y.E., Kim, J.M., Yi, H.S., Joung, K.H., Lee, J.H., Kim, H.J., and Ku, 
+B.J. (2019). Serum R-Spondin 1 Is a New Surrogate Marker for Obesity and 
+Insulin Resistance. Diabetes Metab. J. 43, 368–376. https://doi.org/10. 
+4093/dmj.2018.0066.
+23. Sanjana, N.E., Shalem, O., and Zhang, F. (2014). Improved vectors and 
+genome-wide libraries for CRISPR screening. Nat. Methods 11, 
+783–784. https://doi.org/10.1038/nmeth.3047.
+24. Joung, J., Konermann, S., Gootenberg, J.S., Abudayyeh, O.O., Platt, R.J., 
+Brigham, M.D., Sanjana, N.E., and Zhang, F. (2017). Genome-scale 
+CRISPR-Cas9 knockout and transcriptional activation screening. Nat. 
+Protoc. 12, 828–863. https://doi.org/10.1038/nprot.2017.016.
+25. Li, W., Xu, H., Xiao, T., Cong, L., Love, M.I., Zhang, F., Irizarry, R.A., Liu, 
+J.S., Brown, M., and Liu, X.S. (2014). MAGeCK enables robust identifica­
+tion of essential genes from genome-scale CRISPR/Cas9 knockout 
+screens. Genome Biol. 15, 554. https://doi.org/10.1186/s13059-014- 
+0554-4.
+26. Pall, M.L. (2013). Electromagnetic fields act via activation of voltage-gated 
+calcium channels to produce beneficial or adverse effects. J. Cell. Mol. 
+Med. 17, 958–965. https://doi.org/10.1111/jcmm.12088.
+27. Grassi, C., D’Ascenzo, M., Torsello, A., Martinotti, G., Wolf, F., Cittadini, A., 
+and Azzena, G.B. (2004). Effects of 50 Hz electromagnetic fields on 
+voltage-gated Ca2+ channels and their role in modulation of neuroendo­
+crine cell proliferation and death. Cell Calcium 35, 307–315. https://doi. 
+org/10.1016/j.ceca.2003.09.001.
+28. Cuccurazzu, B., Leone, L., Podda, M.V., Piacentini, R., Riccardi, E., Ripoli, 
+C., Azzena, G.B., and Grassi, C. (2010). Exposure to extremely low-fre­
+quency (50 Hz) electromagnetic fields enhances adult hippocampal neuro­
+genesis in C57BL/6 mice. Exp. Neurol. 226, 173–182. https://doi.org/10. 
+1016/j.expneurol.2010.08.022.
+29. Matsubara, T., Kida, K., Yamaguchi, A., Hata, K., Ichida, F., Meguro, H., 
+Aburatani, H., Nishimura, R., and Yoneda, T. (2008). BMP2 Regulates Os­
+terix through Msx2 and Runx2 during Osteoblast Differentiation. J. Biol. 
+Chem. 283, 29119–29125. https://doi.org/10.1074/jbc.M801774200.
+30. Floyd, R.A., and Hensley, K. (2002). Oxidative stress in brain aging. Impli­
+cations for therapeutics of neurodegenerative diseases. Neurobiol. Aging 
+23, 795–807. https://doi.org/10.1016/s0197-4580(02)00019-2.
+31. Saito, T., Matsuba, Y., Mihira, N., Takano, J., Nilsson, P., Itohara, S., Iwata, 
+N., and Saido, T.C. (2014). Single App knock-in mouse models of Alz­
+heimer’s disease. Nat. Neurosci. 17, 661–663. https://doi.org/10.1038/ 
+nn.3697.
+32. Beaulieu, J.M., Zhang, X., Rodriguiz, R.M., Sotnikova, T.D., Cools, M.J., 
+Wetsel, W.C., Gainetdinov, R.R., and Caron, M.G. (2008). Role of GSK3 
+beta in behavioral abnormalities induced by serotonin deficiency. Proc. 
+Natl. Acad. Sci. USA 105, 1333–1338. https://doi.org/10.1073/pnas. 
+0711496105.
+33. Maddaloni, G., Barsotti, N., Migliarini, S., Giordano, M., Nazzi, S., Picchi, 
+M., Errico, F., Usiello, A., and Pasqualetti, M. (2024). Impact of Serotonin 
+Deficiency on Circadian Dopaminergic Rhythms. Int. J. Mol. Sci. 25, 
+6475. https://doi.org/10.3390/ijms25126475.
+34. Malek, Z.S., Dardente, H., Pevet, P., and Raison, S. (2005). Tissue-specific 
+expression of tryptophan hydroxylase mRNAs in the rat midbrain: anatom­
+ical evidence and daily profiles. Eur. J. Neurosci. 22, 895–901. https://doi. 
+org/10.1111/j.1460-9568.2005.04264.x.
+35. Malek, Z.S., Sage, D., Pe´ vet, P., and Raison, S. (2007). Daily rhythm of 
+tryptophan hydroxylase-2 messenger ribonucleic acid within raphe neu­
+rons is induced by corticoid daily surge and modulated by enhanced loco­
+motor activity. Endocrinology 148, 5165–5172. https://doi.org/10.1210/ 
+en.2007-0526.
+36. Li, T., Chen, X.J., Qian, Y.J., Shao, J.W., Li, X., Liu, S.N., Zhu, L.Y., Zhao, 
+Y.Z., Ye, H.F., and Yang, Y. (2021). A synthetic BRET-based optogenetic 
+device for pulsatile transgene expression enabling glucose homeostasis 
+ll
+Cell 189, 1–16, May 28, 2026 
+15 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 17 ===
+in mice. Nat. Commun. 12, 615. https://doi.org/10.1038/s41467-021- 
+20913-1.
+37. Dolmetsch, R.E., Pajvani, U., Fife, K., Spotts, J.M., and Greenberg, M.E. 
+(2001). Signaling to the nucleus by an L-type calcium channel-calmodulin 
+complex through the MAP kinase pathway. Science 294, 333–339. https:// 
+doi.org/10.1126/science.1063395.
+38. Colella, M., Grisan, F., Robert, V., Turner, J.D., Thomas, A.P., and Pozzan, 
+T. (2008). Ca2+ oscillation frequency decoding in cardiac cell hypertrophy: 
+role of calcineurin/NFAT as Ca2+ signal integrators. Proc. Natl. Acad. Sci. 
+USA 105, 2859–2864. https://doi.org/10.1073/pnas.0712316105.
+39. Sasaguri, H., Nilsson, P., Hashimoto, S., Nagata, K., Saito, T., De 
+Strooper, B., Hardy, J., Vassar, R., Winblad, B., and Saido, T.C. (2017). 
+APP mouse models for Alzheimer’s disease preclinical studies. EMBO J. 
+36, 2473–2487. https://doi.org/10.15252/embj.201797397.
+40. Kim, H., Cho, B., Kim, H.K., Kang, S., An, S., Kwon, D., Kim, H.Y., and Kim, 
+J. (2025). PTN activity in quiescent neural stem cells mediates Shank3 
+overexpression-induced manic behavior. Nat. Commun. 16, 2435. 
+https://doi.org/10.1038/s41467-025-57699-5.
+41. Cho, B., Kim, H., An, S., Hwang, Y., Kwon, D., Park, J., Lengner, C.J., and 
+Kim, J. (2026). Aberrant neural stem cell quiescence is the gateway to 
+autism development linked to Arid1b. Mol. Psychiatry 31, 786–801. 
+https://doi.org/10.1038/s41380-025-03174-y.
+42. Kim, H., Cho, B., Park, H., Kim, J., Kim, S., Shin, J., Lengner, C.J., Won, 
+K.J., and Kim, J. (2022). Dormant state of quiescent neural stem cells links 
+Shank3 mutation to autism development. Mol. Psychiatry 27, 2751–2765. 
+https://doi.org/10.1038/s41380-022-01563-1.
+43. Kao, J.P.Y., Li, G., and Auston, D.A. (2010). Practical aspects of 
+measuring intracellular calcium signals with fluorescent indicators. 
+Methods Cell Biol. 99, 113–152. https://doi.org/10.1016/B978-0-12- 
+374841-6.00005-0.
+44. Li, J., Shang, Z.W., Chen, J.H., Gu, W.J., Yao, L., Yang, X., Sun, X.W., 
+Wang, L.Q., Wang, T.L., Liu, S.Y., et al. (2023). Engineering of NEMO as 
+calcium indicators with large dynamics and high sensitivity. Nat. Methods 
+20, 918–924. https://doi.org/10.1038/s41592-023-01852-9.
+45. Kaschek, L., Vialle, J., Stopper, G., Hoffmann, M.D.A., Zo¨ phel, S., Jansky, 
+J., Ku¨ chler, N., Scha¨ fer, G., Moter, A., Wendel, P., et al. (2026). Fura-10, 
+unlike fura-2, is suitable for long-term calcium imaging in natural killer 
+(NK) cells without compromising cytotoxicity and can be combined with 
+target cell death analysis. Cell Calcium 133, 103091. https://doi.org/10. 
+1016/j.ceca.2025.103091.
+ll
+16 
+Cell 189, 1–16, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 18 ===
+STAR★METHODS
+KEY RESOURCES TABLE
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Antibodies
+LGR4 antibody
+ProteinTech
+#20150-1-AP; RRID: AB_2878648
+LGR4 antibody
+Invitrogen
+#PA5-118812; RRID: AB_2903312
+LGR4 antibody (clone 7E7)
+Sigma-Aldrich
+#MABS1781; RRID: AB_2855319
+beta-Catenin antibody (D10A8)
+Cell Signaling Technology
+#8480; RRID: AB_11127855
+beta Actin antibody
+Abcam
+#ab8227; RRID: AB_2305186
+LEF1 antibody
+Abcam
+#ab85052; RRID: AB_1861440
+GFP antibody
+Abcam
+#ab290; RRID: AB_303395
+Tyrosine Hydroxylase antibody
+Pel-Freez Biologicals
+#p60101-150; RRID: AB_3677426
+GFAP antibody
+Abcam
+#ab53554; RRID: AB_880202
+CYB5B Polyclonal Antibody
+Thermo Fisher
+#PA5-97644; RRID: AB_2812259
+CYB5B Polyclonal Antibody
+Thermo Fisher
+#PA5-90804; RRID: AB_2806244
+Sp7 antibody
+Abcam
+#ab22552; RRID: AB_2194492
+Lrrfip1 antibody
+Santa Cruz Biotechnology
+#sc-101168; RRID: AB_1124666
+Oct4 antibody (AB18976)
+Abcam
+#ab18976; RRID: AB_444714
+SOX2 antibody
+Invitrogen
+#14-9811-82; RRID: AB_11219471
+KLF4 antibody
+Cell Signaling Technology
+#4038; RRID: AB_2265207
+Progerin antibody (13A4D4)
+Santa Cruz Biotechnology
+#sc-81611; RRID: AB_1128450
+Histone H3 (tri methyl K9) antibody
+Abcam
+#ab8898; RRID: AB_306848
+Histone H4 (tri methyl K20) antibody
+Abcam
+#ab177190; RRID: AB_2713955
+Histone H3 (tri methyl K4) antibody
+Abcam
+#ab8580; RRID: AB_306649
+Histone H3 antibody
+Cell Signaling Technology
+#9715; RRID: AB_331563
+p16INK4a antibody
+Invitrogen
+#PA5-20379; RRID: AB_11157205
+APP A4 antibody, a.a. 66-81 of APP (clone 22C11)
+Sigma-Aldrich
+#MAB348; RRID: AB_2056583
+β-Amyloid, 1-16 [6E10] antibody
+BioLegend
+#803001; RRID: AB_2564653
+Amyloid Precursor Protein (APP) antibody
+Sigma-Aldrich
+#A8717; RRID:AB_258409
+β-Amyloid, 1-42 [12F4] antibody
+BioLegend
+#805501; RRID: AB_2564683
+Iba1 antibody
+Abcam
+#ab178847; RRID:AB_2832244
+EGFR antibody (A-10)
+Santa Cruz Biotechnology
+#sc-373746; RRID: AB_10920395
+Phospho-CREB (Ser133) (87G3) antibody
+Cell Signaling Technology
+#9198; RRID: AB_2561044
+Lamin A/C antibody
+BD biosciences
+#612162; RRID: AB_399533
+Notch1 antibody (C-10)
+Santa Cruz Biotechnology
+#sc-373891; RRID: AB_10917214
+HES1 antibody
+Invitrogen
+#PA5-28802; RRID: AB_2546278
+p44/42 MAPK (Erk1/2) (137F5) antibody
+Cell Signaling Technology
+#4695; RRID: AB_390779
+Phospho-p44/42 MAPK (Erk1/2) antibody
+Cell Signaling Technology
+#4370; RRID: AB_2315112
+p38 MAPK antibody
+Cell Signaling Technology
+#9212; RRID: AB_330713
+Phospho-p38 MAPK antibody
+Cell Signaling Technology
+#9216; RRID: AB_331296
+SAPK/JNK antibody
+Cell Signaling Technology
+#9252; RRID: AB_2250373
+Phospho-SAPK/JNK antibody
+Cell Signaling Technology
+#9251; RRID: AB_331659
+Alpha-Smooth Muscle Actin antibody (1A4)
+Invitrogen
+#14-9760-82; RRID: AB_2572996
+Cleaved Caspase-3 (Asp175) antibody
+Cell Signaling Technology
+#9661; RRID: AB_2341188
+Doublecortin antibody
+Cell Signaling Technology
+#4604; RRID: AB_561007
+PSA-NCAM antibody (12E3)
+Invitrogen
+#14-9118-82; RRID: AB_2572932
+Tryptophan Hydroxylase antibody
+Sigma-Aldrich
+#T0678; RRID: AB_261587
+(Continued on next page)
+ll
+Cell 189, 1–16.e1–e12, May 28, 2026 
+e1 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 19 ===
+Continued
+REAGENT or RESOURCE 
+SOURCE 
+IDENTIFIER
+Serotonin antibody (clone YC5/45)
+Sigma-Aldrich
+#MAB352; RRID: AB_11213564
+c-Fos (9F6) antibody
+Cell Signaling Technology
+#2250; RRID: AB_2247211
+Rabbit Anti-Mouse IgG antibody
+Sigma-Aldrich
+#M7023; RRID: AB_260634
+Goat anti-Rabbit IgG (H+L)-HRP
+GenDEPOT
+#SA002-500; RRID: AB_3676718
+Goat anti-Mouse IgG (H+L)-HRP
+Thermo Fisher
+#31430; RRID: AB_228307
+Goat anti-Rat IgG Antibody-HRP
+Thermo Fisher
+#AP136P; RRID: AB_11214444
+Goat anti-Mouse IgG (H+L) Cross-Adsorbed 
+Secondary Antibody, Alexa Fluor 488
+Thermo Fisher
+#A11001; RRID: AB_2534069
+Goat anti-Rabbit IgG (H+L) Cross-Adsorbed 
+Secondary Antibody, Alexa Fluor 488
+Thermo Fisher
+#A11008; RRID: AB_143165
+Goat anti-Rat IgG (H+L) Cross-Adsorbed 
+Secondary Antibody, Alexa Fluor 488
+Thermo Fisher
+#A11006; RRID: AB_2534074
+Donkey anti-Sheep IgG (H+L) Cross-Adsorbed 
+Secondary Antibody, Alexa Fluor 594
+Thermo Fisher
+#A11016; RRID: AB_2534083
+Donkey anti-Goat IgG (H+L) Cross-Adsorbed 
+Secondary Antibody, Alexa Fluor 594
+Thermo Fisher
+#A11058; RRID: AB_2534105
+Goat anti-Rabbit IgG (H+L) Cross-Adsorbed 
+Secondary Antibody, Alexa Fluor 594
+Thermo Fisher
+#A11012; RRID: AB_2534079
+Goat anti-Mouse IgG (H+L) Cross-Adsorbed 
+Secondary Antibody, Alexa Fluor 594
+Thermo Fisher
+#A11005; RRID: AB_2534073
+Goat anti-Rabbit IgG (H+L) Cross-Adsorbed 
+Secondary Antibody, Alexa Fluor 647
+Thermo Fisher
+#A21244; RRID: AB_2535812
+Bacterial and virus strains
+Competent cells (DH5α)
+Thermo Fisher
+#18265017
+Chemicals, peptides, and recombinant proteins
+DAPI
+Invitrogen
+Cat#62248
+easy-BLUE™ Total RNA Extraction Kit
+iNtRON Biotechnology
+Cat#17061
+PCI(Phenol,Chloroform,Isoamylalcohol)
+Biosesang
+Cat#PC2026-050-80
+RT PreMix
+BIONEER
+Cat#K-2041-B
+TOPreal™ SYBR Green qPCR PreMIX
+Enzynomics
+Cat#RT500
+WESTSAVE Gold ECL
+Abfrontier
+Cat#LF-QC0103
+Xpert Protease Inhibitor Cocktail Solution
+GenDEPOT
+Cat#P3100-005
+RIPA Buffer
+Sigma-Aldrich
+#R0278-50ML
+T4 DNA Ligase
+Enzynomics
+#M001S
+Thioflavin T
+Sigma-Aldrich
+#596200
+4% Paraformaldehyde Solution
+HanLAB
+#HPFA-0410
+Lipofectamine 3000 Transfection Reagent
+Invitrogen
+#L3000008
+NIH/3T3 Fibroblast Transfection Reagent
+EZ Biosystems
+#EZT-NIH3-1
+Opti-MEM, Reduced Serum Medium
+Gibco
+#31985-062
+Sodium chloride solution
+Sigma-Aldrich
+#S8776-100ML
+Dynabeads M-280 Streptavidin, 2 mL
+Invitrogen
+#11205D
+Biotin (Long Arm) Maleimide
+Vector Laboratories
+#SP-1501
+3’ EndTag DNA labeling kit
+Vector Laboratories
+#MB-9002
+Protein A Magnetic Beads
+Thermo Fisher Scientific
+#88846
+10X Sodium Citrate buffer, pH6.0 w/ Tween 20
+Biosesang
+#SR2135-050-60
+Recombinant Mouse R-Spondin 1 Protein
+Sino Biological
+#50316-M08S
+Recombinant Mouse R-Spondin 3 Protein
+Bio-techne
+#4120-RS
+Fluo-8 AM
+abcam
+#ab142773
+Calcium Ionophore
+Sigma-Aldrich
+#C7522
+(Continued on next page)
+ll
+e2 
+Cell 189, 1–16.e1–e12, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 20 ===
+Continued
+REAGENT or RESOURCE 
+SOURCE 
+IDENTIFIER
+Ionomycin free acid
+Sigma-Aldrich
+#407950
+Recombinant human BMP-2 (monomer) protein
+Nkmax
+#BMP0905
+Critical commercial assays
+Luciferase Assay System
+Promega
+#E1500
+H&E staining kit
+abcam
+#ab245880
+Genomic DNA Purification Kit
+Thermo Scientific™
+#K0512
+Picro Sirius Red Stain Kit
+abcam
+#ab150681
+Human Amyloidβ (1-40) Assay Kit
+IBL
+#27713
+Human Amyloidβ (1-42) (FL) Assay Kit
+IBL
+#27719
+gentleMACS Kidney dissociation kit
+miltenyi biotec
+#130-110-203
+gentleMACS Spleen dissociation kit
+miltenyi biotec
+#130-095-926
+gentleMACS Skin dissociation kit
+miltenyi biotec
+#130-101-540
+gentleMACS Liver dissociation kit
+miltenyi biotec
+#130-105-807
+TNF alpha ELISA kit
+Abcam
+#ab208348
+IL-6 ELISA kit
+Invitrogen
+#BMS603-2
+Serotonin(5-HT) ELISA kit
+Abcam
+#ab133053
+5-Hydroxyindoleacetic Acid (5-HIAA) ELISA Kit
+MyBioSource
+#MBS2000357
+DAB substrate kit
+Abcam
+#AB64238
+Deposited data
+Single cell RNA sequencing
+This paper
+PRJNA1331480
+Bulk RNA sequencing
+This paper
+PRJNA1402770
+Experimental models: Cell lines
+Human neural progenitor cells
+Sigma-Aldrich
+#SCC008; RRID: CVCL_E921
+Human skin fibroblasts
+Korean Cell Line Bank
+#21947; RRID: CVCL_2400
+293T
+ATCC
+#CRL-3216; RRID: CVCL_0063
+NIH/3T3 (Swiss mouse embryo fibroblast)
+ATCC
+#CRL-1658; RRID: CVCL_0594
+WT mouse skin fibroblasts
+This paper
+N/A
+WT mouse neuron
+This paper
+N/A
+WT mouse astrocytes
+This paper
+N/A
+WT mouse cardiomyocytes
+This paper
+N/A
+ROSA26-LSL-Luciferase skin fibroblasts
+This paper
+N/A
+Experimental models: Organisms/strains
+C57BL/6J
+DBL
+N/A
+DAT-Cre
+Jackson Laboratory
+JAX: 006660
+GFAP-Cre
+Jackson Laboratory
+JAX: 004600
+Progeroid mice (LMNA, G608G)
+Jackson Laboratory
+JAX: 010667
+APP (NL-G-F) KI mice
+RIKEN Brain Science Institute
+RBRC06344
+Tph2 R439H KI mice
+Jackson Laboratory
+JAX: 027307
+Ei-GFP
+This paper
+N/A
+Ei-APP(NL-G-F)
+This paper
+N/A
+Recombinant DNA
+Plasmid: pGL3 Basic Vector
+Addgene
+#212936
+Plasmid: pGL3-Scramble
+This paper
+N/A
+Plasmid: pGL3-Ei
+This paper
+N/A
+Plasmid: pGL3-sEi
+This paper
+N/A
+Plasmid: pGL4.18 CMV-Luc
+Addgene
+#100984
+Plasmid: Mouse CRISPR Knockout Pooled 
+Library (GeCKO v2)
+Addgene
+#1000000052
+(Continued on next page)
+ll
+Cell 189, 1–16.e1–e12, May 28, 2026 
+e3 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 21 ===
+EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+Cell lines
+Human neural progenitor cells, human skin fibroblasts, HEK293T, and NIH/3T3 were maintained at 37◦C in a humidified atmosphere 
+with 5% CO2. All immortalized cell lines were cultured in high-glucose DMEM supplemented with 10% FBS, 1% Penicillin- 
+Streptomycin, and 2 mM L-glutamine. For rigorous quality control, all human and immortalized cell lines were authenticated via Short 
+Tandem Repeat (STR) profiling (Kogene Biotech, Seoul, Korea) and were confirmed to be free of mycoplasma contamination using 
+the MycoSensor PCR assay kit according to the manufacturer’s instructions. Primary mouse cells, including wild-type skin fibro­
+blasts, neurons, astrocytes, and cardiomyocytes, were isolated from C57BL/6J mice, while ROSA26-LSL-Luciferase skin fibroblasts 
+Continued
+REAGENT or RESOURCE 
+SOURCE 
+IDENTIFIER
+Plasmid: lentiCRISPR v2
+Addgene
+#52961
+Plasmid: CACNA1F shRNA
+Abmgood
+#LS414885
+Plasmid: CACNA1C shRNA
+Abmgood
+#LS414875
+Plasmid: SP7 shRNA
+Abmgood
+#LS445166
+Plasmid: KDM4A shRNA
+Abmgood
+#LS425474
+Plasmid: LRRFIP1 shRNA
+Abmgood
+#LS427709
+Plasmid: POLR1C shRNA
+Abmgood
+#LS437168
+Plasmid: scramble shRNA
+Addgene
+#1864
+Plasmid: psPAX2
+Addgene
+#12260
+Plasmid: pMD2.G
+Addgene
+#12259
+Plasmid: pEi-GFP
+This paper
+N/A
+Plasmid: pScr-GFP
+This paper
+N/A
+Plasmid: pEi-DIO-GFP
+This paper
+N/A
+Plasmid: pEi-OSK
+This paper
+N/A
+Plasmid: pEi-Scr
+This paper
+N/A
+Plasmid: pScr-OSK
+This paper
+N/A
+Plasmid: pEi-APPNL-G-F
+This paper
+N/A
+Plasmid: pEi-Cre
+This paper
+N/A
+Plasmid: psEi-Tph2
+This paper
+N/A
+Plasmid: psEi-GFP
+This paper
+N/A
+Plasmid: pCMV-Cyb5b
+This paper
+N/A
+Software and algorithms
+Graphpad Prism
+Graphpad
+https://www.graphpad.com
+ZEN(2.3)
+Zeiss
+https://www.zeiss.com/microscopy/en/ 
+home.html
+Ethovision(13.0)
+Noldus
+https://noldus.com/
+CytExpert SRT (v1.1.0.10007)
+BECKMAN COULTER
+https://www.beckman.kr/flow-cytometry/ 
+research-flow-cytometers/cytoflex/software
+Python v3.1
+Python Software Foundation
+RRID:SCR_008394
+R v4.1.2
+R Core Team
+RRID:SCR_001905
+seaborn v0.11.1
+https://seaborn.pydata.org/
+RRID:SCR_018132
+Seurat v.4.0
+https://seurat.r-forge.r-project.org/
+RRID:SCR_007322
+Cellranger v7.1.0
+10x Genomics
+RRID:SCR_017344
+JASPAR 2024
+https://jaspar.elixir.no/
+RRID:SCR_003030
+SAVER
+https://github.com/mohuangx/SAVER
+RRID:SCR_016598
+DAVID
+https://david.ncifcrf.gov/
+RRID:SCR_001881
+Bowtie v1.3.1
+https://github.com/BenLangmead/bowtie
+RRID:SCR_005476
+DESeq2 v1.34.0
+https://github.com/thelovelab/DESeq2
+RRID:SCR_015687
+MAGeCK v0.5.9.5
+Li et al.25
+RRID:SCR_025016
+Trimmomatic v0.39
+https://github.com/usadellab/trimmomatic
+RRID:SCR_011848
+BioRender
+BioRender
+https://www.biorender.com
+ll
+e4 
+Cell 189, 1–16.e1–e12, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 22 ===
+were specifically generated in-house for this study. Wild type and ROSA26-LSL-Luciferase mice skin fibroblasts were cultured in 
+DMEM with 10% FBS. Primary neurons and astrocytes were obtained from embryos at embryonic day 13.5 (E13.5) and maintained 
+in neurobasal medium supplemented with 2% B27 and 0.5 mM GlutaMAX. Primary cardiomyocytes were isolated from neonatal 
+hearts (P0–P2) via enzymatic digestion with Collagenase Type II and maintained in Medium 199 supplemented with 10% FBS, 
+1% Penicillin-Streptomycin, and 2 mM L-glutamine on plates pre-coated with 0.1% gelatin. All primary cells were used at early pas­
+sages (P1–P3) to preserve physiological relevance.
+Experimental animals
+All animal experiments were conducted in accordance with institutional guidelines and were approved by the Institutional Animal 
+Care and Use Committee (IACUC) of Dongguk University (approval number: IACUC-2019-043-2). This study utilized wild-type 
+C57BL/6J mice, along with the following transgenic and knock-in lines: Dat-IRES-Cre, Gfap-Cre, progeroid LMNAG608G/G608G 
+mice, APPNL-G-F knock-in mice, and R439H Tph2 knock-in mice. Transgenic lines for EMF-inducible expression, including Ei-GFP 
+and Ei-APPNL-G-F, were generated in-house as described in this study. All lines were maintained on a C57BL/6J genetic background. 
+Both male and female mice were used, including young adults (3 months old), aged mice (20–24 months old), and progeroid mice (3 or 
+6 months old), with animals randomly assigned to experimental groups. Mice were group-housed in a SPF facility under a controlled 
+12-hour light/dark cycle (lights on at 09:00), with temperature maintained at 23 ± 1◦C and humidity at 40–60%. Animals had ad libitum 
+access to standard chow and water. Investigators were blinded to group allocation during data collection and histological analysis 
+whenever feasible.
+METHOD DETAILS
+Electromagnetic field (EMF) exposure conditions
+The electromagnetic field (EMF) generation system used in this study is designed to produce a direct current (DC) pulsed electro­
+magnetic field. The system consists of a DC power supply, a microcontroller-based waveform generator, and custom-designed 
+coil assemblies. The waveform generator employs a microcontroller (ATmega328P, Microchip Technology, USA) programmed in 
+C language using the AVR-GCC compiler (version 7.3.0) to produce TTL-level (0-5V) control signals with precise timing and frequency 
+characteristics. These TTL signals are fed into a power driver circuit utilizing field-effect transistors (FETs), where the TTL signal mod­
+ulates the FET gate voltage to control high-voltage, high-current switching between the drain and source terminals. This configuration 
+enables efficient delivery of the modulated power to the coil assembly. For the 60 Hz stimulation protocol, the microcontroller gen­
+erates a unipolar pulsed EMF (PEMF) waveform consisting of cycles with 16.67 ms periods. Each cycle comprises a discrete burst of 
+20consecutive single pulses followed by a resting interval. The resulting DC pulsed waveform, amplified through the FET-based po­
+wer stage, is applied to the coil assembly to generate the EMF for in vitro and in vivo experiments. The peak amplitude of the magnetic 
+field was calibrated and confirmed using a gaussmeter.
+In vitro EMF Exposure
+For in vitro EMF exposure, a Helmholtz coil system was designed using COMSOL Multiphysics 3.4 to generate a spatially uniform 
+magnetic field. The system consisted of two identical circular coils arranged coaxially, producing a near-uniform magnetic flux den­
+sity in the central region between the coils. Each coil had an inner diameter of 15 cm and was oriented to generate a vertically aligned 
+magnetic field relative to the culture plates (see Figure S1A). Cells were transferred to an incubator equipped with the Helmholtz coil 
+system and subjected to EMF exposure at a frequency of 60 Hz and a magnetic flux density of 2.0 mT for 1–7 days, as indicated for 
+each experiment. Cells were maintained under standard culture conditions (37◦C, 5% CO₂) throughout the exposure period, and 
+identical incubators without EMF exposure were used for control conditions.
+In vivo EMF exposure
+For whole-body in vivo EMF exposure, mice were exposed to EMF using a large-scale Helmholtz coil system designed to accom­
+modate animal cages. This system consisted of two identical circular coils with an inner diameter of 60 cm, arranged coaxially to 
+generate a uniform magnetic field across the animal enclosure. The coils were oriented to generate a vertical magnetic field. Mice 
+were exposed to EMF at a frequency of 60 Hz and an intensity of 2.0 mT, unless otherwise specified. Animal positioning within 
+the uniform field region was standardized to ensure consistent exposure across experimental groups.
+Localized EMF exposure using a miniature coil
+For experiments requiring spatially restricted EMF exposure, a miniature circular coil was used instead of a Helmholtz coil configu­
+ration. The miniature coil consisted of a single-loop circular coil with a coil diameter of 25 mm, allowing EMF delivery to a confined 
+region. Mice were briefly anesthetized and placed in a defined and reproducible orientation relative to the miniature coil to minimize 
+positional variability during stimulation. EMF exposure was applied for short durations under anesthesia, after which animals were 
+allowed to recover fully and returned to their home cages. EMF exposure using the miniature coil was performed using the same fre­
+quency (60 Hz) and magnetic field intensity (2.0 mT) as used in whole-body EMF experiments.
+Single-cell RNA sequencing
+For single-cell RNA sequencing, brain tissues from control mice and mice subjected to 48 hours of EMF exposure were harvested and 
+processed together in a single-cell isolation batch to minimize batch effects. Following established protocols,40 tissue dissection and 
+ll
+Cell 189, 1–16.e1–e12, May 28, 2026 
+e5 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 23 ===
+single-cell dissociation were performed. The hippocampal dentate gyrus (DG) was microdissected under sterile conditions. Tissues 
+were minced into ∼1 mm3 fragments and enzymatically dissociated for 20 min in a digestion buffer containing 0.01% papain 
+(25 U/mg) and 0.01% DNase I (2788 U/mg) to obtain single-cell suspensions. Following digestion, the cell suspension was mixed 
+with an equal volume of 0.5% BSA in DPBS and filtered through a 70 μm cell strainer to remove undissociated tissue fragments. 
+The filtrate was then combined with 4 ml of debris removal solution and centrifuged at 3,000 g for 10 min to eliminate debris and 
+myelin contaminants. The remaining cells were collected and resuspended in 1 ml of 0.5% BSA in DPBS. Cells were counted using 
+a Countess™ 3 FL Automated Cell Counter and diluted to 700 cells/μL prior to single-cell capture using the 10x Genomics Single-Cell 
+3′ platform. Single-cell capture and library preparation were performed according to the manufacturer’s protocol without modifica­
+tion. Libraries from individual samples were pooled and sequenced on an Illumina HiSeq 4000 platform with an average sequencing 
+depth of ∼50,000 reads per cell.
+Single-cell RNA sequencing analysis
+In accordance with previously described protocols41 subsequent single-cell data analysis was performed. Raw sequencing data 
+were processed using Cell Ranger v7.1.0 (10x Genomics). FASTQ files were mapped and aligned to the mouse reference genome 
+(mm10) using the STAR aligner with default parameters. Due to the high frequency of dropout events inherent to single-cell RNA 
+sequencing data, which can result in low signal-to-noise ratios for some genes, gene expression values were imputed using 
+SAVER to recover more accurate expression estimates. For downstream analysis, datasets were analyzed using the Seurat package 
+(v4.0) in R. Datasets from control mice and EMF-exposed mice were integrated using Seurat’s integration workflow. Briefly, integra­
+tion anchors were identified using the FindIntegrationAnchors function, and the datasets were subsequently merged using the 
+IntegrateData function. Principal component analysis (PCA) was then performed on the integrated dataset for dimensionality reduc­
+tion. Gene expression distributions across cell populations were visualized using violin plots generated with the Seurat package 
+(v4.0). Gene ontology (GO) enrichment analysis of differentially expressed genes was performed using the DAVID functional anno­
+tation tool.
+Construction of the EMF inducible gene switch plasmid
+We utilized an EMF-inducible gene switch to enable controlled expression of genes of interest. The Lgr4 promoter region (Ei) was 
+amplified by PCR from mouse genomic DNA. To generate an EMF-responsive GFP reporter (Ei-GFP), the amplified Ei was inserted 
+into the pCIG3 lentiviral vector in place of the CMV promoter, driving GFP expression under EMF control.
+Preparation of Ei-OSK, Ei-APPNL-G-F and Ei-Tph2 constructs
+Specific therapeutic and disease-modeling constructs were generated by replacing the GFP sequence in the Ei-GFP lentiviral vector 
+with target coding sequences. For partial reprogramming, Oct4, Sox2, and Klf4 (OSK) coding sequences were assembled as a poly­
+cistronic cassette and cloned into the Ei-GFP vector. For Alzheimer’s disease modeling, the APP gene containing the humanized 
+murine APP sequence with Swedish (KM670/671NL), Arctic (E693G), and Beyreuther/Iberian (I716F) mutations (APPNL-G-F) was 
+PCR-amplified from cDNA of APPNL-G-F knock-in mouse brains31 and inserted into the Ei-GFP vector. For the depression model, 
+the Wild type Tph2 coding sequence was amplified from cDNA and cloned into the Ei-GFP lentiviral vector.
+Lentiviral production and titration
+Lentiviruses were produced in HEK293T cells maintained in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% 
+fetal bovine serum (FBS), 1% penicillin-streptomycin (P/S), and 1% geneticin at 37◦C in a humidified incubator containing 5% CO2. 
+One day prior to transfection, HEK293T cells were subcultured and seeded onto 15 cm culture dishes at a density of 2 × 107cells per 
+dish. To ensure optimal culture conditions for transfection, the medium was replaced with fresh growth medium 1 h before transfec­
+tion. Cells were co-transfected with the lentiviral expression constructs together with the packaging plasmids psPAX2 and pMD2.G 
+using calcium phosphate co-precipitation. At 24 h after transfection, the medium was replaced with fresh growth medium. Viral 
+supernatants were harvested 72 h after transfection and centrifuged at 2,000 rpm for 5 min to remove cell debris. The resulting 
+supernatants were carefully collected and filtered through a 0.45 μm pore-size filter. Filtered viral supernatants were transferred 
+to ultracentrifuge tubes and adjusted to equal weight with PBS. Lentiviral particles were concentrated using an Optima XE- 
+100 Ultracentrifuge at 25,000 rpm for 2 h. Following ultracentrifugation, the supernatants were completely discarded, and the viral 
+pellets were resuspended in cold PBS and used for subsequent experiments. Functional titers were determined by transducing 
+HEK293FT cells seeded in 24-well plates at 1 ×104 cells per well. Upon reaching 70% confluency, cells were incubated for 8 h 
+with 250μl of serially diluted viral supernatants (10-1 to 10-3) in DMEM containing 8 μg/mL polybrene. After medium replacement, 
+the proportion of GFP-positive cells was quantified 48–72 h post-transduction via flow cytometry. To ensure accuracy, only dilution 
+factors yielding 1–20% GFP positivity were used for calculation. The functional titer was calculated as (initial cell number × % GFP- 
+positive cells × dilution factor) / inoculum volume, establishing a titer of approximately 1 ×108 TU/mL.
+Generation of transgenic mice
+Transgenic mice expressing GFP or APPNL-G-F under the control of the Lgr4 promoter (Ei element) were generated by pronuclear 
+microinjection. Ei-GFP constructs were linearized using ClaI and PsiI restriction enzymes, resulting in a 3.7 kb DNA fragment. Ei- 
+APPNL-G-F constructs were linearized using ClaI and AatII restriction enzymes to produce a 3.7 kb DNA fragment. The linearized 
+ll
+e6 
+Cell 189, 1–16.e1–e12, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 24 ===
+DNA fragments were gel-purified and microinjected into the pronuclei of fertilized C57BL/6J zygotes. Injected embryos were trans­
+ferred into pseudopregnant foster females for the production of transgenic founder animals. A total of 6 Ei-GFP transgenic founders 
+(4 males and 2 females) and 9 Ei-APPNL-G-F transgenic founders (5 males and 4 females) were identified. Genomic DNA was 
+isolated from tail biopsies of the founder mice, and transgene integration was confirmed by genomic PCR analysis. Correct insertion 
+of the transgenes was verified by the detection of 733 bp GFP-specific and 508 bp APP-specific amplicons using gene-specific 
+primer sets.
+In vitro luciferase reporter assay
+Cells were seeded into 96-well plates at a density of 1.5 x 104cells per well and cultured under standard growth conditions. Trans­
+fection was performed with Scrambled-luciferase (Control) or Ei-luciferase reporter constructs using Lipofectamine 3000. At 36 h 
+post-transfection, cells were exposed to electromagnetic fields (EMF) at defined intensities and frequencies for 36 h. Following 
+EMF exposure, cells were transferred to a separate incubator without EMF stimulation and cultured for an additional 48 h. Cells 
+were subsequently lysed, and luciferase activity was measured using a Luciferase Assay System Kit. Luminescence was quantified 
+using a microplate luminometer according to the manufacturer’s protocol. Values were normalized to total cell number or protein 
+content, with each condition analyzed using multiple technical replicates.
+Chromatin immunoprecipitation (ChIP) analysis
+Control or EMF-exposed mouse fibroblasts were collected and cross-linked with 1% paraformaldehyde (PFA) for 5 min at room tem­
+perature, followed by quenching with glycine for 5 min. Cells were lysed, and chromatin preparation was performed according to an 
+established protocol.42 Chromatin was sheared to an average fragment size of 200–500 bp. For immunoprecipitation, chromatin 
+samples were incubated with anti-Sp7, anti-Lrrfip1, or Rabbit Anti-Mouse IgG, along with Protein A Magnetic Beads. Samples 
+were rotated overnight at 4 ◦C. Beads were collected and resuspended in 50uL of IP elution buffer. Samples were incubated at 
+65◦C for 1 h for elution, and the supernatant was transferred to fresh tubes. For cross-link reversal, eluates were incubated at 
+65◦C overnight. DNA was purified using a Chromatin IP DNA Purification Kit. Enriched genomic regions were analyzed by quantitative 
+PCR (qPCR) using locus-specific primers. ChIP signals were calculated as fold enrichment relative to IgG controls. The antibodies 
+used in this study are detailed in the key resources table.
+DNA-Protein binding assay and proteomic identification
+Cells were seeded at a density of 4 x 105 cells per well into 6-well plates. Whole-cell lysates were prepared 72 h post-EMF exposure. 
+Cells were washed 2 times with ice-cold phosphate-buffered saline (PBS) and lysed on ice for 30 min in buffer containing 10 mM Tris- 
+HCl (pH 7.5), 1 mM EDTA, 5 mM MgCl2, 50 mM KCl, 1 mM DTT, and Xpert Protease Inhibitor Cocktail Solution. Lysates were centri­
+fuged at 12,000 x g for 10 min at 4◦C. Protein concentration was determined via Bradford assay. The Lgr4 promoter locus (Ei element) 
+was PCR-amplified and labeled with biotin at the 3’ end using a 3’ EndTag DNA labeling kit and Biotin Maleimide. Biotinylation was 
+confirmed by streptavidin gel-shift assay. Protein extracts were incubated with biotinylated DNA in binding buffer (40 mM Tris-HCl pH 
+7.5, 40 mM NaCl, 40 mM KCl, 10% glycerol, 2 mM EDTA, and 2 mM DTT) at 37◦C for 30 min. Dynabeads M-280 Streptavidin were 
+added and incubated for 20 min at room temperature. Beads were collected using a magnetic stand and washed 3 times with binding 
+buffer. Bound proteins were eluted by boiling in SDS sample buffer, resolved by SDS-PAGE, and stained with Coomassie Brilliant 
+Blue. Specific protein bands were excised and analyzed via liquid chromatography–tandem mass spectrometry (LC–MS/MS) for 
+identification.
+RNA preparation and real-time qPCR
+Total RNA extraction from cells and mouse tissues was conducted using the eCube Tissue RNA Mini Kit. RNA concentration was 
+measured using a NanoDrop spectrophotometer. mRNA was reverse transcribed into cDNA using the RT PreMix. Transcript abun­
+dance was measured through qPCR using the TOPreal SYBR Green qPCR PreMIX. Quantitative PCR analysis was performed in 
+3 replicates using 1/50 of the reverse transcription reaction in an ABI Prism 7000 instrument.
+Characterization and validation of spatiotemporal gene control using the Ei-GFP system
+For the initial validation of the EMF-inducible gene switch, a green fluorescent protein (GFP) reporter system (Ei-GFP) was utilized. 
+The Ei-GFP construct was packaged into lentiviral vectors for both in vitro and in vivo experiments to assess the induction kinetics 
+and spatial precision of the EMF-driven gene activation.
+In vitro validation of the Ei-GFP in cell lines
+HEK293T cells and primary fibroblasts were transduced with Ei-GFP lentivirus at a multiplicity of infection (MOI) of 5. Transduced 
+cells were subjected to EMF exposure (2.0 mT, 60 Hz) for various durations (0, 6, 12, 24, and 48 hours). GFP expression was moni­
+tored using live-cell fluorescence imaging and quantified via flow cytometry. For the analysis of induction and decay kinetics, cells 
+were exposed to cyclic EMF (12 h ON / 12 h OFF) and harvested at defined intervals. Total RNA was extracted for real-time qPCR 
+analysis, and protein levels were measured by immunoblotting using an anti-GFP antibody. The antibodies used in this study are 
+detailed in the key resources table.
+ll
+Cell 189, 1–16.e1–e12, May 28, 2026 
+e7 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 25 ===
+In vivo spatiotemporal induction of GFP expression
+For systemic induction analysis, 8-week-old wild-type mice received a tail vein injection of Ei-GFP lentivirus (1 x 108 TU/mL). For local 
+induction analysis, the virus was delivered via stereotaxic injection into specific regions of the motor cortex of the brain. Following a 
+1-week recovery period, mice were exposed to continuous or cyclic EMF (3dON/4dOFF) using a specialized EMF generator. Tissues 
+were harvested, fixed in 4% paraformaldehyde, and processed into 30 μm thick sections. GFP fluorescence was visualized using 
+confocal microscopy, and the intensity was quantified across different tissues to evaluate the spatial specificity and induction effi­
+ciency of the Ei gene switch.
+In vivo partial reprogramming using the Ei-OSK system
+In vivo partial reprogramming was performed using an Ei gene switch encoding factors Oct4, Sox2, and Klf4 (OSK). Lentiviruses 
+encoding the Ei-OSK gene switch were systemically delivered to mice via tail vein injection, followed by exposure to EMF 
+(2.0 mT, 60 Hz).
+Applicability of the EMF-inducible gene switch in vivo
+To test the applicability of the EMF-inducible gene switch in vivo, 6-month-old wild-type mice received a single tail vein injection of Ei- 
+OSK lentivirus. Tail vein injections were performed under anesthesia with Avertin. Systemic delivery was performed using an insulin 
+syringe equipped with a 30-gauge needle, with a total injection volume of 100–150 μL per mouse. Lentiviral preparations were admin­
+istered at a titer of 1 × 10⁸ TU/mL, and the same dose was used for injection. Mice were monitored until full recovery from anesthesia.
+In vivo partial reprogramming
+For in vivo partial reprogramming in progeroid and naturally aged mice, Ei-OSK lentivirus was systemically administered at 4-week 
+intervals in progeroid mice starting at 3 months of age for 3 months and in naturally aged mice starting at 20 months of age for 
+4 months. Mice were exposed to cyclic EMF using a 3-day ON and 4-day OFF regimen throughout the treatment period. Mice 
+were analyzed at 6 and 24 months of age, respectively. Liver, kidney, spleen, aorta, and skin were collected at the indicated end­
+points for histological analysis, Western blotting, qRT–PCR, and immunofluorescence analyses.
+Effects of long-term cyclic EMF exposure
+To examine the effects of long-term cyclic EMF exposure following Ei-OSK delivery, Mice in the 2-cycle group received a single tail 
+vein injection, whereas mice in the 20-cycle group received five tail vein injections over the exposure period. Metabolic homeostasis, 
+including metabolic rate, physical activity, and circadian rhythms, was assessed using a metabolic cage system. Renal function was 
+evaluated by measuring serum creatinine and blood urea nitrogen (BUN) levels. Systemic blood parameters were measured using 
+automated hematological and biochemical analyzers. Liver, kidney, and spleen were collected from mice subjected to 20cycles 
+of cyclic EMF exposure for histological analysis.
+Neural stem cell analysis
+10-month-old aged wild-type mice received stereotaxic injection of Ei-OSK lentivirus into the dentate gyrus of the hippocampus. Viral 
+infection was performed bilaterally using stereotaxic coordinates relative to bregma (AP −2.18 mm, ML ±1.5 mm, DV −1.9 mm). A 
+volume of 1.0 μL of lentiviral suspension at a titer of 1 × 10⁸ TU/mL was injected per site. Following viral injection, mice were exposed 
+to cyclic EMF using a 3-day ON and 4-day OFF regimen for 1 month. After cyclic EMF exposure, brain tissues were collected, and 
+neural stem cells in the dentate gyrus were analyzed by immunofluorescence staining.
+In vivo skin injury rescue using the Ei-OSK system
+For wound healing experiments, wild-type mice were subjected to an excisional dorsal skin wound model. Briefly, the dorsal skin was 
+shaved and disinfected, and a full-thickness excisional wound was generated using a 5-mm biopsy punch. A single direct injection of 
+Ei-OSK lentivirus was administered into the wound site. Mice were then exposed to cyclic EMF using a miniaturized EMF generator 
+with a 3-day ON and 4-day OFF regimen. Wound tissues, including the surrounding skin, were collected at the indicated time points, 
+including 14 days after injury, fixed in paraformaldehyde, and processed for histological analysis. For Sirius Red staining, paraffin- 
+embedded sections were deparaffinized, rehydrated, and stained with Sirius Red solution to visualize collagen fibers, followed by 
+washing in acidified water. Collagen deposition was quantified from Sirius Red–stained sections using image-based analysis.
+In vivo modeling of Alzheimer’s disease using the Ei-APP system
+Alzheimer’s disease modeling was performed using mutant APP transgenic mice (Ei-APPNL-G-F) expressing human amyloid precur­
+sor protein (APP) harboring the Swedish (KM670/671NL), Arctic (E693G), and Beyreuther/Iberian (I716F) mutations under the control 
+of an Ei element.
+Confirmation of mutant APP expression
+6-month-old Ei-APPNL-G-F mice were subjected to continuous EMF exposure for 1 week using a miniature EMF generator, while age- 
+matched wild-type mice served as controls. For the comparison of induction efficiency against constitutive expression, 6-month-old 
+APP knock-in mice (APPNL-G-F/NL-G-F) were analyzed in parallel with 6-month-old Ei-APPNL-G-F mice that received EMF exposure for 
+3 months starting at 3 months of age. APP expression and processing were assessed via immunoblotting using antibodies against 
+APP (22C11), APP/Aβ (6E10), CTFβ, and CTFα. The antibodies used in this study are detailed in the key resources table.
+Age-dependent induction of Alzheimer’s disease phenotypes
+EMF exposure was initiated in young (3 months old) and aged (20 months old) Ei-APPNL-G-F mice for a 3-month duration. Following 
+the exposure period, brain tissues were collected for biochemical, histological, and behavioral analyses. Soluble and insoluble Aβ 
+ll
+e8 
+Cell 189, 1–16.e1–e12, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 26 ===
+40 and Aβ 42 fractions were quantified by ELISA, and Aβ plaque deposition in the cortex and hippocampus was analyzed via Aβ 42 
+immunofluorescence and Thioflavin-T staining. Neuroinflammatory responses were evaluated by immunofluorescence staining for 
+Gfap and Iba1, and inflammatory cytokines (TNF-alpha and IL-6) were measured by ELISA. Cognitive and behavioral performance 
+was assessed using the Y-maze, contextual fear conditioning, and Morris water maze tests.
+Restoration of serotonergic function using the sEi-Tph2 system
+To restore serotonergic function through precise regulation of the Ei gene switch, a second-generation EMF-inducible gene switch 
+(sEi) driving temporally controlled Tph2 expression was employed in the R439H tryptophan hydroxylase 2 knock-in (Tph2-KI) mouse 
+model. A lentiviral vector encoding Tph2 under the control of the sEi system (sEi-Tph2) was used for all experiments. To validate the 
+temporal regulation of Tph2 expression in vitro, fibroblasts transduced with sEi-Tph2 were subjected to cyclic EMF exposure (12 h 
+ON / 12 h OFF). Cells were collected at defined time points during and after EMF exposure (0, 6, 12, 18, 24, and 30 h), and Tph2 mRNA 
+expression levels were quantified by real-time qPCR. For in vivo experiments, sEi-Tph2 lentivirus was stereotaxically injected into the 
+dorsal raphe nucleus (DRN) of 7-week-old Tph2-KI mice using the following coordinates relative to bregma: AP -4.59 mm, ML 0 mm, 
+and DV -2.90 mm.
+Validation of temporal Tph2 regulation and neuronal activity
+Following viral delivery, 7-week-old Tph2-KI mice were subjected to either cyclic EMF (12 h ON / 12 h OFF) or continuous EMF (24 h 
+ON) for 1 week. After completion of EMF exposure, brain tissues were collected for molecular, neurochemical, and histological an­
+alyses. Tph2 expression in the DRN was assessed by real-time qPCR and immunofluorescence staining to quantify Tph2-positive 
+cells. Neuronal activity in the DRN was evaluated by immunofluorescence staining for c-Fos, comparing the induction patterns be­
+tween the cyclic and continuous exposure groups.
+Measurement of 5-HT and 5-HIAA levels
+Serotonin (5-HT) and 5-hydroxyindoleacetic acid (5-HIAA) levels were measured in mouse brain tissues. Following dissection, inde­
+pendent tissue samples of approximately 30 mg each were collected, rinsed in ice-cold PBS (pH 7.2), and weighed after removing 
+residual blood with PBS-soaked filter paper. Tissues were homogenized in ice-cold PBS using Potter-Elvehjem tissue grinders. To 
+disrupt cell membranes, samples were sonicated at 4◦C using a Fisherbrand Model 120 Sonic Dismembrator for 2 cycles of 30 s 
+each. Homogenates were centrifuged at 5,000 rpm for 15 min, and the resulting supernatants were collected and stored at -70◦C 
+until analysis. The quantification of 5-HT and 5-HIAA was performed using the 5-HT ELISA kit and the Mouse 5-HIAA ELISA Kit ac­
+cording to the manufacturers’ instructions. Absorbance was measured at 450 nm using a VERSAmax Tunable Microplate Reader 
+(Molecular Devices).
+CRISPR/Cas9 library specification
+A genome-scale pooled CRISPR-Cas9 screen was performed using the mouse GeCKOv2 sgRNA library.23,24 The library targets 
+20,611 mouse genes with 6 sgRNAs per gene, provided as 2 separate libraries (A and B) containing 3 sgRNAs per gene each. 
+Both libraries include 1,000 non-targeting control sgRNAs.
+Lentivirus production and pooled sgRNA library packaging
+Lentiviral particles carrying the pooled GeCKOv2 sgRNA library were produced in HEK293T cells. HEK293T cells were maintained in 
+DMEM supplemented with 10% FBS and 1x penicillin-streptomycin-glutamine. 1 day prior to transfection, cells were seeded in 
+15 cm culture plates at a density of 1.4 x 107cells per plate. 10 ug of pooled sgRNA library plasmid, 7.5 ug of psPAX2, and 5 ug 
+of pMD2.G were diluted in Opti-MEM. Transfection was performed by adding 50 ul of Lipofectamine 3000 dropwise to the cells. Cul­
+ture medium was replaced 6 h post-transfection with fresh growth medium (DMEM + 10% FBS + 1% BSA). Viral supernatants were 
+collected at 60 h post-transfection, cleared by centrifugation at 3,000 rpm at 4◦C for 10 min, and filtered through a 0.45 μm pore-size 
+membrane. Lentivirus was generated at a viral titer of 1 × 109 viral particles/mL
+Genome-wide pooled CRISPR/Cas9 screening
+Primary MEFs were isolated from Ei-GFP mouse (E12.5) embryos and subjected to EMF exposure for 2 days to induce GFP expres­
+sion. Following the initial EMF exposure, the induced GFP-positive (Ei-GFP+) cell population was isolated via Beckman-Coulter 
+CytoFLEX SRT cell sorter and re-plated to ensure the selection of EMF-responsive cells prior to library transduction. Cells were trans­
+duced with the pooled lentiviral sgRNA library at a multiplicity of infection (MOI) of approximately 0.3. At 16 h post-transduction, the 
+culture medium was replaced with fresh medium, and cells were maintained for 3 days. Cells were dissociated using TrypLE and 
+resuspended in PBS. GFP-positive (Ei-GFP+) and GFP-negative (Ei-GFP-) cell populations were isolated using a Beckman-Coulter 
+CytoFLEX SRT cell sorter, with fluorescence detected via the B525 channel. Gating strategies were established based on GFP in­
+tensity. Genomic DNA was extracted from the sorted fractions using the Genomic DNA Purification Kit according to the manufac­
+turer’s instructions.
+Sequencing library preparation and high-throughput sequencing
+Sequencing libraries were prepared using the TruSeq Nano DNA High Throughput Library Prep Kit (Illumina). Specifically, 100 ng of 
+amplicon was end-repaired to generate 5’-phosphorylated, blunt-ended dsDNA molecules. The end-repaired amplicons underwent 
+single ’A’ base addition and ligation of TruSeq DNA UD Indexing adapters. The products were purified and enriched via PCR to create 
+the final DNA library. Libraries were quantified using KAPA Library Quantification kits and qualified using the TapeStation D1000 
+ScreenTape. Indexed libraries were submitted to an Illumina NovaSeqX for paired-end (151 x 2 bp) sequencing.
+ll
+Cell 189, 1–16.e1–e12, May 28, 2026 
+e9 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 27 ===
+Bioinformatics analysis and gene identification
+Sequencing reads were trimmed using Trimmomatic, and a unified reference library was constructed by merging and deduplicating 
+Mouse GeCKO v2 libraries (A and B) using R. Processed reads were mapped to this reference, and read counts for each sgRNA were 
+quantified using the count command in MAGeCK.25 sgRNA enrichment in the GFP-negative (GFP-) population relative to the GFP- 
+positive (GFP+) control was analyzed, and significant genes were determined using the Robust Rank Aggregation (RRA) algorithm. 
+Genes showing significant enrichment in the GFP- fraction were identified based on the RRA score.
+FACS cytometry and cell sorting
+Single-cell suspensions were prepared as described above, filtered through a 40-μm cell strainer, and resuspended in phosphate- 
+buffered saline (PBS) at a concentration of 1 × 10⁶ cells/mL prior to sorting. Fluorescence-activated cell sorting was performed using 
+a Beckman-Coulter CytoFLEX flow cytometer, with GFP fluorescence detected using the B525 channel (488-nm excitation laser, 
+525/40 band-pass filter). Forward scatter (FSC) and side scatter (SSC) parameters were used to exclude dead cells, followed by 
+doublet discrimination. Gating strategies were established based on unstained controls. Sorted cells were collected directly into 
+collection tubes containing culture medium for downstream analyses.
+Western blotting analysis
+Mouse tissues and cells were homogenized in RIPA buffer supplemented with 1x Xpert Protease Inhibitor Cocktail Solution. Samples 
+were centrifuged at 12,000 rpm for 10 min, and the supernatant was mixed with 5x SDS loading buffer followed by incubation at 
+100◦C for 10 min. Protein extracts were separated by 5–12% SDS-PAGE and transferred onto nitrocellulose membranes. Mem­
+branes were incubated overnight at 4◦C with the following primary antibodies: anti-Lgr4, anti-beta-actin, anti-GFP, anti-Oct4, 
+anti-Sox2, anti-Klf4, anti-Progerin, anti-H3K9me3, anti-H4K20me3, anti-Histone H3, anti-Cleaved caspase-3, anti-APP, anti-beta- 
+Amyloid, and anti-APP for CTFs. Antigen-antibody reactions were visualized using WESTSAVE Gold ECL. The antibodies used in 
+this study are detailed in the key resources table.
+Measurement of Aβ1-42 and Aβ1-40
+Mouse brain samples were homogenized in 4 volumes of ice-cold TBS buffer [140 mM NaCl, 3 mM KCl, 25 mM Tris-HCl (pH 7.4), 
+5 mM EDTA, 2 mM 1,10-phenanthroline, and Protease Inhibitor] using a Potter-Elvehjem (PE) homogenizer (20 strokes). TBS-soluble 
+fractions were collected after centrifugation at 100,000 x g for 1 h at 4◦C. Pellets were resuspended in 4 volumes of 6.25 M GuHCl 
+(50 mM Tris, pH 8.0), homogenized (20 strokes), and nutated for 2 h at room temperature. Following centrifugation at 20,800 x g for 
+20 min at 4◦C, the GuHCl-soluble fraction was collected. Levels of Aβ 1-42 and Aβ 1-40 were quantified using IBL ELISA kits accord­
+ing to the manufacturer’s instructions. Absorbance was measured at 450 nm using a VERSAmax Tunable Microplate Reader.
+Thioflavin T (ThT) staining
+ThT staining was performed to visualize amyloid-beta plaques in brain sections. Following behavioral analyses, mice were anesthe­
+tized and transcardially perfused with 0.9% saline followed by ice-cold 4% Paraformaldehyde Solution. Brains were post-fixed over­
+night in 4% PFA at 4◦C and cryoprotected in 30% sucrose for 48 h. Coronal hippocampal sections (35μm thickness; approximately 
+-1.7 to -2.0 mm from bregma) were prepared using a cryostat. ThT was prepared as a 2 mM stock solution in distilled water and 
+diluted to a 10 μM working concentration in 50% ethanol. Sections were incubated in the ThT solution for 7–15 min in the dark at 
+room temperature. For differentiation, sections were sequentially immersed in 100%, 95%, and 90% ethanol for 10 s each, followed 
+by PBS rinsing. Sections were washed 2 times with PBS, mounted, and imaged using a fluorescence microscope. The number and 
+area of ThT-positive plaques were quantified using ImageJ.
+Immunohistochemistry
+Immunohistochemistry was conducted following established protocols. Primary antibodies were used at the dilutions specified in the 
+key resources table: anti-Lgr4 (1:500), anti-GFP (1:500), anti-Tyrosine Hydroxylase (1:1000), anti-H3K9me3 (1:500), anti-Ki67 
+(1:1000), anti-alpha-Smooth Muscle Actin (1:200), anti-p16INK4a (1:100), anti-beta-Amyloid 1-42 (1:1000), anti-Gfap (1:1000), and 
+anti-Iba1 (1:100). Appropriate fluorescent Alexa Fluor 488 or Alexa Fluor 594 secondary antibodies and DAPI were utilized for visu­
+alization. Images were acquired using a laser-scanning confocal microscope. The antibodies used in this study are detailed in the key 
+resources table.
+Isolation of ROSA26-LSL-Luc tail-tip fibroblasts
+Tail-tip fibroblasts (TTF) were isolated from ROSA26-LSL-Luc mice using an explant-based culture method. Tail-tip tissues were 
+collected under sterile conditions, washed with PBS, and minced into pieces of approximately 1–2 mm. The tissue fragments 
+were plated onto culture dishes pre-coated with 0.1% gelatin and cultured in DMEM supplemented with 10% FBS and 1% 
+Penicillin-Streptomycin. Cells were maintained at 37◦C in a humidified incubator with 5% CO2. Fibroblasts migrating from the tissue 
+explants were expanded until reaching confluence, after which they were passaged using 0.25% trypsin-EDTA. All downstream ex­
+periments were performed using cells at early passages (P1–P3) to preserve their physiological properties.
+ll
+e10 
+Cell 189, 1–16.e1–e12, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 28 ===
+Fluo-8 calcium influx, calcium oscillation amplitude
+Live-cell Ca2+ imaging and acquisition
+Mouse fibroblasts were used for cytosolic live Ca2+ imaging. Following EMF exposure, cells were incubated with Fluo-8 AM at a final 
+concentration of 5 μM for 30 min at 37◦C, washed with pre-warmed imaging buffer, and allowed to undergo de-esterification prior to 
+imaging. Live-cell Ca2+ imaging was performed using a laser-scanning confocal microscope at 37◦C in HEPES-buffered imaging me­
+dium. Fluo-8 fluorescence was excited at 488 nm, and emission was collected between 520–620 nm. The pinhole was opened to 
+maximize fluorescence signal collection and minimize photobleaching during long-term imaging. Time-lapse imaging was conducted 
+in XY scanning mode for a total duration of 1,800 s (30 min). Images were acquired at a spatial resolution of 0.83 x 0.83 um per pixel, 
+corresponding to a field of view of 425 x 425 um.
+Cytosolic Ca2+ quantification and normalization
+Cytosolic Ca2+ levels were quantified using region-of-interest (ROI)-based fluorescence analysis. The quantification procedure was 
+based on previously established protocol.43–45 Briefly, ROIs were manually defined over the cytoplasmic region, and mean fluores­
+cence intensity values were extracted from time-lapse image sequences using ZEN software. Changes in cytosolic Ca2+ levels were 
+quantified using the signal-to-baseline ratio (SBR), also referred to as ΔF/F0 normalization. SBRt was calculated using the following 
+equation:
+SBRt = ΔFt
+F0
+= Ft −F0
+F0 
+where Ft represents the mean fluorescence intensity within the cytosolic ROI at a given time point. The baseline fluorescence (F0) was 
+defined as the average fluorescence intensity within a +/- 10 s time window centered on the time point of interest. This local baseline 
+normalization corrects for baseline variability and enables accurate representation of transient cytosolic Ca2+ influx dynamics. ΔF/F0 
+values were plotted over time to characterize cytosolic Ca2+ oscillatory patterns.
+Transcription factor binding site prediction
+To identify potential transcription factors (TFs) binding to the target genomic region (Ei element), we performed a motif scan using the 
+TFBSTools package in R and the pyjaspar library in Python. The JASPAR 2024 CORE collection was utilized as the reference data­
+base. Candidate binding sites were identified by scanning the DNA sequence with a minimum similarity threshold of 80%. For visu­
+alization, representative sequence logos were generated using the seqLogo and motifStack packages to illustrate the binding pref­
+erences of the identified TFs.
+Behavior test
+Y-maze test
+Spontaneous alternation behavior was assessed using a Y-maze apparatus consisting of 3 identical arms (35 cm long x 5 cm wide x 
+15 cm high). Each mouse was placed at the center of the maze and allowed to explore all 3 arms for 10 min under low-light conditions. 
+An arm entry was defined as the entry of all 4 paws into an arm. Both spontaneous alternation percentage (SAP) and same-arm re­
+turns (SAR) were quantified. SAP was calculated as (number of alternations / (total arm entries - 2)) x 100. The total number of arm 
+entries was recorded as an index of locomotor activity. The maze was cleaned with 70% ethanol between trials to eliminate olfac­
+tory cues.
+Contextual fear conditioning test
+Contextual fear conditioning was performed in a conditioning chamber defined by specific visual, tactile, and olfactory features. Mice 
+were placed in the chamber and allowed to explore the context for 180 s. Conditioning was induced by the delivery of a foot shock 
+(0.7 mA, 2 s). To assess hippocampus-dependent contextual fear memory, mice were re-exposed to the same context in the absence 
+of a foot shock. Contextual freezing was measured during a 180 s test session conducted 24 h after conditioning and repeated once 
+daily for 3 consecutive days. Freezing behavior was quantified automatically and expressed as the percentage of time spent 
+immobile.
+Morris water maze test
+The task was conducted in a circular pool with a submerged platform, and mouse behavior was recorded during 60 s trials. During the 
+acquisition phase, mice were trained to locate the platform over 5 consecutive days with 3 trials per day. For the assessment of 
+spatial memory, a probe test was performed 24 h after the final training session by removing the platform and allowing mice to 
+swim freely for 60 s. During the probe trial, the time spent in each quadrant was recorded and analyzed.
+Open field test
+The open field test was performed to assess locomotor activity and anxiety-like behavior. The apparatus consisted of a square arena 
+(40 x 40 x 40 cm) surrounded by opaque walls. Mice were placed in the center and allowed to explore for 10 min under low-light con­
+ditions. Locomotor activity was evaluated by measuring total distance traveled, and anxiety-like behavior was assessed by quanti­
+fying the time spent in the central area. Movement patterns were recorded and analyzed using EthoVision XT.
+Three-chamber social interaction test
+Social interaction was assessed using a three-chamber apparatus constructed of transparent Plexiglas with retractable doorways. 
+Mice were habituated to the apparatus for 10 min with unrestricted access to all chambers. During the sociability phase, a stranger 
+ll
+Cell 189, 1–16.e1–e12, May 28, 2026 
+e11 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 29 ===
+mouse was placed under a wire cup in one side chamber, while an empty wire cup was placed in the opposite chamber. The test 
+mouse was allowed to explore for 10 min. Interaction time was recorded and analyzed using EthoVision XT.
+Tail suspension test
+Depressive-like behavior was assessed using the tail suspension test. Mice were individually suspended by the tail using adhesive 
+tape affixed approximately 1 cm from the tip. Each test session was conducted for 6 min. Immobility, defined as the absence of initi­
+ated movements, was quantified for the total duration of the session.
+Resident-intruder test
+Aggressive behavior was assessed using the resident-intruder paradigm. Resident mice were individually housed for at least 7 days 
+prior to testing. On the test day, an unfamiliar intruder mouse was introduced into the home cage for 10 min. Physical attacks, defined 
+as direct biting or wrestling, were quantified and expressed as a percentage of the total test time.
+Light-dark box test
+Anxiety-like behavior was assessed using the light/dark box paradigm. The apparatus consisted of a dark and a brightly illuminated 
+compartment connected by a small opening. Mice were placed in the dark compartment and allowed to explore for 5 min. The latency 
+to fully enter the light chamber was measured in seconds.
+Marble burying test
+Repetitive and anxiety-related behavior was assessed using the marble burying test. Mice were habituated to a cage containing fresh 
+bedding, after which glass marbles were evenly arranged on the surface. Mice were allowed to explore for 30 min. A marble was 
+considered buried if more than 2/3 of its surface was covered. The number and percentage of buried marbles were quantified.
+QUANTIFICATION AND STATISTICAL ANALYSIS
+All experimental data were presented as the mean +/- SEM of at least 3 independent experiments. The n values represent the specific 
+number of independent biological replicates or mice utilized for each experimental group. Statistical analyses were performed using 
+GraphPad Prism (GraphPad). P-values were determined using Student’s t test, one-way ANOVA, or two-way ANOVA, followed by 
+Tukey-Kramer, Sidak’s, or Dunnett’s multiple comparisons tests for post-hoc analysis. Statistical significance was defined based 
+on the following: GP: 0.1234 (ns), < 0.0332 (*), < 0.0021 (**), < 0.0002 (***), < 0.0001 (****). (refer to individual figures for specific details). 
+P-values less than 0.0021 were collectively represented with two asterisks (**) to denote a high level of significance. For longitudinal 
+analysis of body weight progression, two-way ANOVA with Tukey’s multiple comparisons test was applied. Survival rates were 
+analyzed using the Log-rank (Mantel-Cox) test for percent survival. Comprehensive statistical details for all experiments, including 
+precise n values and specific tests used, are provided in the respective figure legends. All data collection and subsequent analyses 
+were conducted in a randomized and blinded manner to ensure objectivity.
+ll
+e12 
+Cell 189, 1–16.e1–e12, May 28, 2026 
+Please cite this article in press as: Kim et al., Electromagnetic field-inducible in vivo gene switch for remote spatiotemporal control of gene 
+expression, Cell (2026), https://doi.org/10.1016/j.cell.2026.03.029
+Resource 
+
+
+=== Page 30 ===
+Supplemental figures 
+(legend on next page)
+ll
+Resource 
+
+
+=== Page 31 ===
+Figure S1. Characterization of the Ei gene switch, related to Figure 1
+(A) Schematic sine and square wave signals and bursts of pulsed EMFs. Pulsed-EMF signals were periodically repeated bursts consisting of 20 single-pulse 
+repetitions at a certain frequency. 
+(B) Uniform manifold approximation and projection (UMAP) plot of mouse brain single-cell RNA sequencing (scRNA-seq) data. UMAP visualization of cell 
+clustering: astrocytes (ASTs), endothelial cells (ECs), oligodendrocytes (OLGs), microglia (MG), neuroblasts (NBs), Purkinje cells (PCs), and vascular and lep­
+tomeningeal cells (VLMCs). 
+(C) Heatmap showing the expression of differentially expressed genes for each cluster between control and EMF-exposed brain. Yellow indicates higher 
+expression, and purple indicates lower expression. Clusters (top; colors as in Data S1.2). 
+(D) Venn diagram of Gene Ontology classification. Positive regulation of response to stimulus (49 genes), response to external stimulus (50 genes), and positive 
+regulation of signaling (44 genes). 
+(E) Violin plots showing EMF-responsive gene expression across cell types in control (red) and EMF-exposed brain (blue). 
+(F) Violin plots showing EMF-responsive gene expression in control (red) and EMF-exposed brain (blue). 
+(G) Schematic of the in vitro EMF-inducible gene switch system. 
+(H) Luciferase reporter assay for the promoter activity of EMF-responsive candidate genes (n = 3). 
+(I) Luciferase reporter assay for various Ei element activities under no EMF conditions (n = 3). 
+(J) Luciferase reporter assay for pLgr4-450 bp (Ei)-luciferase activity in fibroblasts, NIH/3T3, neurons, astrocytes, and cardiomyocytes (n = 3). 
+(K) Schematic of Rosa26-LoxP-STOP-LoxP (LSL)-luciferase (LSL-Luc/+) fibroblasts infected with Ei-Cre and exposed to EMF. 
+(L) Time course luciferase activity measurement in Ei-Cre-infected LSL-Luc/+ fibroblasts at 0, 6, 12, 24, and 48 h post EMF exposure (n = 3). 
+(M) Luciferase activity in Ei-Cre-infected LSL-Luc/+ fibroblasts after EMF ON (3 days), compared with control (Scr-Cre) (n = 3). 
+(N) Luciferase assay of +/+ and LSL-Luc/+ fibroblasts at indicated days after Ei-Cre infection without EMF exposure (n = 3). All quantified data represent mean ± 
+SEM. Statistical significance was determined by one-way (N) or two-way (J, L, and M) ANOVA.
+ll
+Resource 
+
+
+=== Page 32 ===
+(legend on next page)
+ll
+Resource 
+
+
+=== Page 33 ===
+Figure S2. Effects of Lgr4 downstream signaling by Ei gene switch, related to Figure 1
+(A) Western blot analysis and quantification of Wnt/β-catenin pathway proteins (epidermal growth factor receptor [EGFR], β-catenin, pCREB, and lamin A/C) in 
+brain, liver, and kidney tissues from control and EMF-exposed mice (n = 3). 
+(B) Western blot analysis and quantification of Notch-Hes1 signaling pathway proteins (Notch, Hes1) in brain, liver, and kidney tissues from control and EMF- 
+exposed mice (n = 3). 
+(C) Real-time qPCR analysis of cancer-associated gene expression in liver and kidney from EMF-exposed and control mice (n = 3). 
+(D) Real-time qPCR analysis of Wnt/β-catenin target genes in fibroblasts under EMF ON, EMF OFF, and RSPO1 (50 ng/mL) treatment conditions (n = 3). 
+(E) Western blot analysis of β-catenin and Lef1 protein expression in fibroblasts treated with DMSO or RSPO1 (50 ng/mL) under control or EMF exposure 
+conditions. 
+(F) Real-time qPCR analysis of Wnt/β-catenin target genes in fibroblasts under EMF ON, EMF OFF, and RSPO3 (50 ng/mL) treatment conditions (n = 3). 
+(G) Western blot analysis of fibroblasts treated with DMSO or RSPO3 (50 ng/mL) under EMF conditions, showing expression of β-catenin and Lef1 proteins (n = 3). 
+(H) Real-time qPCR analysis of Wnt/β-catenin target genes in fibroblasts treated with DMSO or RSPO1 (0.05 or 50 ng/mL) under control or EMF exposure (n = 3). 
+(I) Real-time qPCR analysis of Wnt/β-catenin target genes in fibroblasts treated with DMSO or RSPO3 (0.05 or 50 ng/mL) under control or EMF exposure (n = 3). 
+(J) Western blot analysis of phosphorylated and total ERK, p38, and JNK in skin fibroblasts exposed to EMF ON for 5 days compared with untreated controls. 
+Quantification of relative protein levels (p-ERK/ERK, p-p38/p38, p-JNK/JNK) is shown (right) (n = 3). All quantified data represent mean ± SEM. Statistical 
+significance was determined by a two-tailed Student’s t test (A, B, and J) or a one-way (C) or two-way (D, F, H, and I) ANOVA.
+ll
+Resource 
+
+
+=== Page 34 ===
+Figure S3. Spatiotemporal gene expression of the Ei gene switch, related to Figure 2
+(A) Schematic diagram of EMF exposure for postnatal Ei-GFP mice using EMF. Mice were exposed to EMF for 3 days of EMF ON followed by 3 days of EMF OFF. 
+Figure 2G images were captured on day 6 of the experiment. 
+(B) Schematic diagram of EMF exposure for adult Ei-GFP mice. Mice were exposed to EMF for 7 days, followed by 3 days of EMF OFF. Tissues for Figure 2H data 
+were prepared on day 10 of the experiment. 
+(legend continued on next page) 
+ll
+Resource 
+
+
+=== Page 35 ===
+(C) Bar chart shows the quantification of GFP+ cells for Figure 2H (n = 3). 
+(D) Bar chart shows the quantification of the band intensity of GFP normalized to β-actin for Figure 2I (n = 3). 
+(E) Pictures of the main device and accessories of a miniaturized EMF coil and generator used for EMF exposure of localized anatomical regions. EMF intensities 
+and frequencies are controllable through the generator. 
+(F) Bar chart shows the quantification of the band intensity of GFP normalized to β-actin for Figure 2K (n = 3). 
+(G) Real-time qPCR analysis of GFP in different surrounding regions of mice subjected to localized EMF stimulation compared with untreated controls. Cranial 
+region: brain and ear skin; thoracic region: heart and aorta; abdominal region: kidney and small intestine; and pelvic region: muscle and large intestine (n = 3). 
+(H) Schematic image of lentiviral infection of Ei-DIO-GFP in the midbrain of Dat-Cre mice (left) and the cortex of Gfap-Cre mice (right). 
+(I) Schematic of Ei-GFP construct and representative fluorescence images of human fibroblasts transduced with Scr-GFP or Ei-GFP under EMF. GFP (green) and 
+DAPI (blue) are shown at day 0, day 3 (EMF ON), and day 7 (after 4 days of EMF OFF). Scale bar, 50 μm. 
+(J–L) Western blot analysis of GFP and quantification of band intensity in human fibroblasts, human NSCs, and 293T cells transduced with Ei-GFP, respectively. 
+Protein was collected at 0, 1, 2, and 3 days during EMF ON and after subsequent EMF OFF (n = 3). All quantified data represent mean ± SEM. Statistical 
+significance was determined by one-way (D and J–L) or two-way (C and F) ANOVA.
+ll
+Resource 
+
+
+=== Page 36 ===
+Figure S4. Mechanisms of EMF-induced Ei activation via Cyb5b, Ca2⁺ oscillations, and Sp7, related to Figure 3
+(A) Differential-abundance rank plot. All sgRNAs were ordered by the difference in log₂ counts (GFP⁻ −
+GFP⁺). Positive values indicate enrichment in the GFP⁻ 
+fraction, whereas negative values indicate relative enrichment in GFP⁺ cells. The top 10 GFP⁻-enriched sgRNAs are highlighted and annotated by their target 
+genes. 
+(legend continued on next page) 
+ll
+Resource 
+
+
+=== Page 37 ===
+(B) Gene-level enrichment analysis by MAGeCK robust rank aggregation (RRA). The y axis shows −log(RRA score), where higher values indicate stronger, 
+concordant enrichment of multiple sgRNAs targeting the same gene in the GFP⁻ fraction. Top candidate genes are highlighted. 
+(C) Schematic illustration showing Ei-GFP fibroblasts subjected to sgRNA-Cas9-mediated Cyb5b KO, followed by lentiviral Cyb5b OE under EMF exposure. 
+(D) Luminescence analysis of Ei-luciferase-transduced fibroblasts in control, Cyb5b KO after EMF ON and subsequent OFF (left), and Cyb5b OE conditions in 
+Cyb5b KO fibroblasts after EMF ON and subsequent OFF (right). Time course measurements of luminescence were performed up to 120 h (n = 3). 
+(E) Fluorescence intensity traces of Fluo-8 AM-loaded fibroblasts under different physical stimuli, including EMF, ionophore, ionomycin, blue light, heat, magnetic 
+fields, and ultrasound. 
+(F) Quantification of total mean Fluo-8 fluorescence intensity across groups during 300 s (n = 10). 
+(G) Real-time Ca2+ traces (ΔF/F0) for heat and ultrasound stimulation. 
+(H) Real-time qPCR analysis of endogenous Lgr4 mRNA in fibroblasts under EMF or alternative stimuli (ionophore, ionomycin, blue light, heat, magnetic fields, 
+ultrasound, and control) (n = 3). 
+(I) Luciferase reporter activity in Ei-luciferase-transfected fibroblasts subjected to EMF ON for 2 days followed by EMF OFF for 2 days, compared with controls 
+and other physical stimuli (n = 3). 
+(J) Real-time Ca2+ oscillation amplitude (ΔF/F0) traces in fibroblasts transfected with shControl, shCacna1c, or shCacna1f under control and EMF exposure 
+conditions. 
+(K and L) GO enrichment analysis of predicted Ei element-binding transcription factors, including categories related to biological processes (K) and molecular 
+functions (L). 
+(M) Schematic depicting the method for capturing the Ei-binding transcription factors. The Ei is incubated in EMF-exposed cell lysates to allow Ei-binding proteins 
+to interact with the element. Biotin-conjugated Ei-binding protein complexes were isolated by streptavidin-coated magnetic beads and separated by sodium 
+dodecyl sulfate-polyacrylamide-gel electrophoresis (SDS-PAGE). The components are separated by SDS-PAGE, and the Ei-binding proteins are identified by 
+mass spectrometry (left). Quantification analysis of transcription factors that bound to the Ei element after EMF exposure (right). 
+(N) Western blot analysis of Lgr4 in fibroblasts transduced with control shRNA (shCtrl) or Sp7-targeting shRNA (shSp7) under control and EMF exposure. 
+(O) Luciferase reporter assay for Ei-luciferase activity in fibroblasts treated with shKdm4a, shLrrfip1, and shPolr1c under time course EMF ON and subsequent 
+OFF (n = 3). 
+(P) Western blot analysis of Sp7 in Ei-GFP⁺ and Ei-GFP⁻ cells isolated from skin, spleen, kidney, and liver. Quantification of Sp7 band intensity in Ei-GFP⁺ cells 
+compared with Ei-GFP⁻ cells from the indicated tissues (n = 3). 
+(Q) Western blot analysis of GFP expression in Ei-GFP-transfected fibroblasts under EMF exposure or RSPO1 treatment. 
+(R) Western blot analysis of GFP expression in Ei-GFP-transfected fibroblasts under EMF exposure or BMP2 treatment. All quantified data represent mean ± 
+SEM. Statistical significance was determined by one-way (F and H) or two-way (D, I, O, and P) ANOVA.
+ll
+Resource 
+
+
+=== Page 38 ===
+Figure S5. Regimen optimization and histological analysis of Ei-OSK-mediated in vivo partial reprogramming, related to Figure 4
+(A) Real-time qPCR analysis of OSK expression in spleen, kidney, skin, aorta, lung, and muscle tissues from Scr-OSK- and Ei-OSK-transduced mice after 3 days 
+of EMF exposure (n = 6). 
+(B) Experimental design of EMF exposure regimens for Ei-OSK mice, including 1–6 days of EMF ON followed by 6–1 days OFF cycles for 7 days. 
+(legend continued on next page) 
+ll
+Resource 
+
+
+=== Page 39 ===
+(C and D) Survival rates (C) and body weights (D) of Ei-OSK mice subjected to different EMF ON/OFF cycles (1dON/6dOFF, n = 6; 2dON/5dOFF, n = 8; 3dON/ 
+4dOFF, n = 6; 4dON/3dOFF, n = 8; 5dON/2dOFF, n = 6; 6dON/1dOFF, n = 6; 7dON, n = 6). 
+(E) Experimental design for Ei-OSK-treated aged (20-month-old) WT mice via cyclic EMF exposure (3 days ON/4 days OFF) for 120 days. Saline and Ei-OSK 
+controls were included. 
+(F) Representative images of aged mice from each treatment group (saline, Ei-GFP, Ei-OSK, and Ei-OSK + cyclic EMF). 
+(G and H) Survival rates and body weight progression of aged mice administered saline or Ei-OSK with or without cyclic EMF exposure (control + saline, n = 7; 
+cyclic EMF + saline, n = 8; control + Ei-OSK, n = 8; cyclic EMF + Ei-OSK, n = 8). 
+(I) H&E staining of aortic tissues from young and aged mice in Ei-GFP with saline, Ei-OSK (no EMF), and Ei-OSK (cyclic EMF exposure) groups. Quantification of 
+adventitial thickness (left) and adventitia/media ratio (right) is shown (n = 3). 
+(J) IF staining of α-SMA (green) and DAPI (blue) in aortic sections from WT (6-month-old) and progeroid (6-month-old) mice administered Ei-OSK with or without 
+cyclic EMF exposure. Representative images of α-SMA signals are shown (left). Quantification of α-SMA-positive cells (center) and total DAPI-positive cells (right) 
+in the aortic wall is presented (n = 6). 
+(K) IF staining of the Ei-OSK-transduced aged mice aorta stained with α-SMA (green) and DAPI (blue) (left). Quantification of the α-SMA+ and DAPI+ cells (right) 
+(n = 6). 
+(L and M) Histological analysis of the liver, kidney, spleen, and skin from Ei-OSK-transduced WT (6-month-old) and progeroid (6-month-old) mice (L) and aged 
+(24-month-old) mice (M). Tissues were stained with H&E (n = 3). 
+(N) Real-time qPCR analysis of the senescence-associated genes in the liver and kidney of Ei-OSK-transduced aged (24-month-old) mice under cyclic EMF 
+exposure (n = 3). 
+(O) Western blot analysis of OSK, H3K9me3, H3K4me3, and cleaved caspase-3 in the liver of Ei-OSK-transduced young (6-month-old) and aged (24-month-old) 
+mice after cyclic EMF exposure for 20 cycles. 
+(P) IF staining of the Ei-OSK-transduced aged (24-month-old) mice in liver stained with p16INK4a (green) and DAPI (blue) after cyclic EMF exposure for 20 cycles 
+(left). Scale bar: 50 μm. Quantification of the p16INK4a+ cells (right). 
+(Q) Schematic of cyclic EMF exposure for 30 days (3 days ON/4 days OFF) in 10-month-old WT mice injected with Ei-OSK in hippocampal dentate gyrus. 
+(R) IF staining of Gfap⁺ Sox2⁺ NSCs and Dcx⁺ Psa-ncam⁺ NBs in DG of Ei-OSK mice under control and cyclic EMF exposure. Quantification of NSCs and NBs cell 
+population is shown at right (n = 6). All quantified data represent mean ± SEM. Statistical significance was determined by a two-tailed Student’s t test (K, M, and 
+R), Log-rank test (C and G) or one-way (P) or two-way (A, D, I, J, L, and N) ANOVA.
+ll
+Resource 
+
+
+=== Page 40 ===
+Figure S6. Age-dependent AD modeling via the Ei-APPNL-G-F system, related to Figure 5
+(A) Schematic depicting the generation of Ei-APPNL-G-F mice for AD modeling. 
+(B) ThT staining of Aβ plaques after EMF exposure in the Ei-APPNL-G-F mice hippocampal region under control conditions or after 1, 2, and 3 months of EMF 
+exposure. 
+(C) The levels of tumor necrosis factor α (TNF-α) and interleukin (IL)-6 were measured by ELISA in young and aged Ei-APPNL-G-F mice under EMF exposure (n = 6). 
+(D) IF analysis of astrocytes (Gfap, red), microglia (Iba1, blue), and amyloid plaques (Aβ42, green) in the Hp of WT, APPNL-G-F KI mice, and Ei-APPNL-G-F mice 
+(n = 3). 
+(E) Morris water maze test of aged Ei-APPNL-G-F mice after 3 months of EMF exposure, compared with WT and APPNL-G-F (12-month-old) mice. Representative 
+heatmaps from the Morris water maze probe test showing time spent in each quadrant (top). Quantification of time spent in each quadrant (bottom) (n = 6 per 
+group). All quantified data represent mean ± SEM. Statistical significance was determined by one-way (D, H, K, and L) or two-way (B, C, E, and F) ANOVA.
+ll
+Resource 

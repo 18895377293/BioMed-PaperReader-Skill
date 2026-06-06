@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "source_type": "local_pdf",
+  "source_url": "C:\\Users\\man_fulong\\Desktop\\可编程体内生产生物活性细胞外囊泡以治疗心肌梗死.pdf",
+  "local_pdf_path": "C:\\Users\\man_fulong\\Desktop\\可编程体内生产生物活性细胞外囊泡以治疗心肌梗死.pdf",
+  "title": "Programmable production of bioactive extracellular vesicles in vivo to treat myocardial infarction",
+  "metadata_sources": [
+    "local_pdf",
+    "crossref",
+    "openalex",
+    "semantic_scholar"
+  ],
+  "doi": "10.1038/s41467-025-58260-0",
+  "paper_id": "doi:10.1038/s41467-025-58260-0",
+  "authors": [
+    "Siyuan Fu",
+    "Zhiyu Wang",
+    "Peihong Huang",
+    "Guanjun Li",
+    "Jian Niu",
+    "Zhiyang Li",
+    "Guangyue Zu",
+    "Pengcheng Zhou",
+    "Lianhui Wang",
+    "David Tai Leong",
+    "Xianguang Ding"
+  ],
+  "venue": "Nature Communications",
+  "source": "crossref",
+  "year": "2025",
+  "published": "2025",
+  "affiliations": [
+    "Nanjing University of Posts and Telecommunications",
+    "Nanjing Drum Tower Hospital",
+    "Chinese Academy of Sciences",
+    "Suzhou Institute of Nano-tech and Nano-bionics",
+    "Nantong University",
+    "Affiliated Hospital of Nantong University",
+    "National University of Singapore"
+  ],
+  "pdf_url": "https://www.nature.com/articles/s41467-025-58260-0.pdf",
+  "abstract": "Current myocardial infarction (MI) treatment strategies remain challenged in suboptimal pharmacokinetics and potential adverse effects. Here we present a bioelectronic interface capable of producing on-demand abundant bioactive extracellular vesicles (EVs) near the MI area for in-situ localized treatment. The technology, termed electroactive patch for wirelessly and controllable EV generation (ePOWER), leverages wireless bioelectronic patch to stimulate embedded electrosensitive macrophages, actively modulating the biosynthesis of EVs and enabling EV production with high programmability to be delivered directly to the MI area. ~2400% more bioactive EVs were produced per cell under our ePOWER system. When surgically implanted, we demonstrate the therapeutic potential of in-situ EV production system to alleviate MI symptoms and improve cardiac function. This programmable ePOWER technology enables in-situ production of therapeutically rich EVs, thus reducing the need for exogenous cell expansion platforms and dedicated delivery, holding promise as a therapeutic all-in-one platform to treat various diseases. Myocardial infarction treatment strategies remain challenged in effectiveness. Here we present a bioelectronic interface capable of producing on-demand abundant bioactive extracellular vesicles near the disease area for in situ localized treatment.",
+  "script": "collect_metadata.py"
+}
