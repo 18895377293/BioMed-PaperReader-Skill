@@ -2,7 +2,7 @@
 Biomedical research-oriented AI Skill | Critical literature reading tool, automatically generate structured Obsidian deep research notes.
 
 ## Introduction
-Specially developed for ultrasound immunology research, this tool realizes critical reading of PDF academic papers, outputs standardized structured markdown notes compatible with Obsidian vault.
+Specially developed for general biomedical research, this tool realizes critical reading of PDF academic papers, outputs standardized structured markdown notes compatible with Obsidian vault.
 
 ## Features
 1. Critical evaluation of paper conclusion & evidence intensity
